@@ -5,7 +5,7 @@
 
 define e = Character("Eileen")
 define k = Character("Kamkar")
-
+define p = Character("Pendar")
 
 # The game starts here.
 
