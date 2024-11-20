@@ -4,11 +4,17 @@
 # name of the character.
 
 define e = Character("Eileen")
-define k = Character("Kamkar")
-define p = Character("Pendar")
-define a = Character("Aucoin")
-define j = Character("Hamilton")
-define v = Character("Azevedo")
+define k = Character("Milad Kamkar")
+define p = Character("Pendar Mahmoudi")
+define a = Character("Marc Aucoin")
+define h = Character("Jordan Hamilton")
+define v = Character("Matheus Azevedo")
+define z = Character("Zino Ojogbo")
+define m = Character("Michael Tam")
+define j = Character("J-Money")
+define y = Character("Marlyn")
+define d = Character("Dean Mary Wells")
+define t = Character("Tool")
 
 # The game starts here.
 
