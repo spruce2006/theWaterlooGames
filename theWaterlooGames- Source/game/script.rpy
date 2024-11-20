@@ -6,6 +6,7 @@
 define e = Character("Eileen")
 define k = Character("Kamkar")
 define p = Character("Pendar")
+define a = Character("Aucoin")
 
 # The game starts here.
 
