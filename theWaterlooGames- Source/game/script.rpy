@@ -15,6 +15,21 @@ define j = Character("J-Money")
 define y = Character("Marlyn")
 define d = Character("Dean Mary Wells")
 define t = Character("Tool")
+
+image stagebg = "stagebg.png"
+image edcombg = "edcombg.png"
+image toolbg = "toolbg.png"
+image cornicopiabg = "conicopiabg.png"
+image forestbg = "forestbg.png"
+image justin = "justin.png"
+image pendar cornicopia = "pendar cornicopia.png"
+image tam cornicopia = "tam cornicopia.png"
+image tam fighting = "tam cornicopia fighting.png"
+image tam tree = "tam tree.png"
+image marlyn = "marlyn.png"
+image aucoin cornicopia = "aucoin cornicopia.png"
+image aucoin zino fight = "aucoin zino fight.png"
+image zino cornicopia = "zino cornicopia.png"
 # The game starts here.
 
 #label start:
@@ -41,9 +56,10 @@ label start:
     # Blurb about the lore of the Waterloo Games, show title, Kamkar asks for name (cameron)
 
     # Justin and Marlyn explain how the games work, and then usher you off the go on the Tool show (maddy)
-    scene stage BG
+    scene stagebg
+    show justin
     j "whats good fam"
-
+    
     # The Tool asks you a bunch of questions; just interactive not for points (snack)
 
 
