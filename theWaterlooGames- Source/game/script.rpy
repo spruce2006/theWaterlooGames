@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -8,6 +8,7 @@ define k = Character("Kamkar")
 define p = Character("Pendar")
 define a = Character("Aucoin")
 define j = Character("Hamilton")
+define v = Character("Azevedo")
 
 # The game starts here.
 
