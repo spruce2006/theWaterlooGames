@@ -7,11 +7,8 @@ define e = Character("Eileen")
 define k = Character("Kamkar")
 define p = Character("Pendar")
 define a = Character("Aucoin")
-<<<<<<< Updated upstream
 define j = Character("Hamilton")
 define v = Character("Azevedo")
-=======
->>>>>>> Stashed changes
 
 # The game starts here.
 
