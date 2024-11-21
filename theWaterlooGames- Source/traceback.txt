@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 141, in script
-    jump menu
-ScriptError: could not find label 'menu'.
+  File "game/script.rpy", line 98, in script
+    show jamilton cornicopia:
+Exception: Image 'jamilton' does not accept attributes 'cornicopia'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 141, in script
-    jump menu
-  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1699, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'menu'.
+  File "game/script.rpy", line 98, in script
+    show jamilton cornicopia:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'jamilton' does not accept attributes 'cornicopia'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.3.24111502
 theWaterlooGames 1.0
-Thu Nov 21 09:20:49 2024
+Thu Nov 21 13:55:40 2024
