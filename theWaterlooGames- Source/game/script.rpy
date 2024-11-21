@@ -31,7 +31,7 @@ image tam cornicopia = "tam cornicopia.png"
 image tam fighting = "tam cornicopia fighting.png"
 image tam tree:
     "tam tree.png"
-    zoom 4
+    zoom 3.5
 image marlyn:
     "marlyn.png"
     zoom 0.75
