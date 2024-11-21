@@ -95,6 +95,7 @@ label start:
     show pendar cornicopia:
         xalign 0.0
         yalign 0.0
+<<<<<<< Updated upstream
     show tam cornicopia:
         xalign 0.16666
         yalign 0.16666
@@ -112,6 +113,25 @@ label start:
         yalign 0.16666
     #show azevedo cornicopia:
         #xalign 0.99999
+=======
+    show tam cornucopia:
+        xalign 0.2
+        yalign 0.2
+    show aucoin cornucopia:
+        xalign 0.3
+        yalign 0.3
+    show jamilton cornucopia:
+        xalign 0.5
+        yalign 0.5
+    show zino cornucopia:
+        xalign 0.7
+        yalign 0.3
+    show kamkar cornucopia:
+        xalign 0.8
+        yalign 0.2
+    #show azevedo cornucopia:
+        #xalign 1.0
+>>>>>>> Stashed changes
         #yalign 0.0
 
 
