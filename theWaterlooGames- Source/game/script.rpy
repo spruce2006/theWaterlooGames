@@ -15,14 +15,14 @@ define j = Character("J-Money")
 define y = Character("Marlyn")
 define d = Character("Dean Mary Wells")
 define t = Character("Tool")
-#assigns a variable to each character in the game
-
 
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornicopiabg = "cornicopiabg.png"
-image forestbg = "forestbg.png"
+image cornicopiabg = "conicopiabg.png"
+image forestbg:
+    "forestbg.png"
+    zoom 4
 image justin: 
     "justin.png"
     zoom 2
@@ -34,7 +34,9 @@ image marlyn:
     "marlyn.png"
     zoom 0.75
 image aucoin cornicopia = "aucoin cornicopia.png"
-image aucoin zino fight = "aucoin zino fight.png"
+image aucoin zino fight: 
+    "aucoin zino fight.png"
+    zoom 1.1
 image zino cornicopia = "zino cornicopia.png"
 image dean mary wells end = "dean mary wells end.png"
 image kamkar cornicopia = "kamkar cornicopia.png"
@@ -82,7 +84,7 @@ label start:
 
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
-   
+
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
 
@@ -104,9 +106,74 @@ label start:
 
     # We approach Zino and Aucoin and Hamilton fights them. Hamilton disappears! (maddy)
 
-
+    
     # Zino and Aucoin approach us and start to fight us. At the end, they disappear. (maddy)
+    scene forestbg
+    show aucoin zino fight:
+        yalign 0.2
+        xalign 0.5
+    a "why isn't the water boiling???"
+    z "because of the latent heat of vapourization"
+    a "How many grams of NaOH are required to saponify 500g of Corn oil (SAP value = 137)"
+    label a_q1:
+        menu:
+            '75.4g':
+                jump a1_incorrect_1
 
+            '65.6g':
+                jump a1_correct
+        
+            '72.8g':
+                jump a1_incorrect_2
+
+        label a1_incorrect_1:
+            $ menu_flag = False
+            a "Hmmmm, someone hasnt been studying Perry's Chemical Engineering Handbook - try again."
+            jump a_q1
+
+        label a1_correct:
+            $ menu_flag = True
+            a "Wow - i'm impressed."
+            jump a1_done
+     
+        label a1_incorrect_2:
+            $ menu_flag = False
+            a "You're gonna burn someone with that soap - try again."
+            jump a_q1
+   
+    label a1_done:
+    z "it seems my partner here may have underestimated you, I won't make the same mistake."
+    z "balance this equation!, _ CH4 + _ O2 -> CO2 + 2H2O"
+    label z_q1:
+        menu:
+            '1,2':
+                jump z1_correct
+
+            '1,1':
+                jump z1_incorrect_1
+        
+            '3,4':
+                jump z1_incorrect_2
+
+        label z1_incorrect_1:
+            $ menu_flag = False
+            z "How are you going to get anywhere in life if you can't balance a simple chemical equation!"
+            jump z_q1
+
+        label z1_correct:
+            $ menu_flag = True
+            z "Well that was a warm up question."
+            jump z1_done
+     
+        label z1_incorrect_2:
+            $ menu_flag = False
+            z "How are you going to get anywhere in life if you can't balance a simple chemical equation!"
+            jump z_q1
+    label z1_done:
+
+
+        # ... the game continues here.
+ 
 
     # Looks into the sky, and there's 22 cannons. Looks like it's just me and Pendar left. The Gamemakers make an announcement that they replenished the Cornucopia. We decide to go, since we're running out of supplies. We go to the Cornucopia. Pendar is behind us and challenges us to a fight. (spruha)
 
