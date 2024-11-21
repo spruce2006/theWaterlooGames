@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2024-11-21 03:34:00 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.3.24111502
@@ -6,10 +7,21 @@ Early init took 0.07s
 Loading error handling took 0.03s
 Loading script took 0.11s
 Loading save slot metadata took 0.02s
+=======
+2024-11-21 14:42:01 UTC
+Windows-10-10.0.22631
+Ren'Py 8.3.3.24111502
+
+Early init took 0.10s
+Loading error handling took 0.06s
+Loading script took 0.18s
+Loading save slot metadata took 0.05s
+>>>>>>> 872845ce18419ab83b1a8fd74eaa621766ebac3f
 Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
+Running init code took 0.08s
+Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
+<<<<<<< HEAD
 Reloading save slot metadata took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\camer\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
@@ -18,10 +30,20 @@ Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.02s
 DPI scale factor: 2.000000
+=======
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+>>>>>>> 872845ce18419ab83b1a8fd74eaa621766ebac3f
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
+<<<<<<< HEAD
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
@@ -32,6 +54,18 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.17s
+=======
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.12s
+>>>>>>> 872845ce18419ab83b1a8fd74eaa621766ebac3f
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2880, 1800)
@@ -41,7 +75,11 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Arc(TM) Graphics'
 Version: b'4.6.0 - Build 31.0.101.5334'
 Display Info: None
+<<<<<<< HEAD
 Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+=======
+Screen sizes: virtual=(1920, 1080) physical=(2021, 1137) drawable=(2021, 1137)
+>>>>>>> 872845ce18419ab83b1a8fd74eaa621766ebac3f
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s

@@ -2,9 +2,23 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 76: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    j "whats good fam"
-    ^
+The label incorrect_1 is defined twice, at File "game/script.rpy", line 129:
+        label incorrect_1:
+and File "game/script.rpy", line 158:
+        label incorrect_1:
+
+
+The label correct is defined twice, at File "game/script.rpy", line 134:
+        label correct:
+and File "game/script.rpy", line 163:
+        label correct:
+
+
+The label incorrect_2 is defined twice, at File "game/script.rpy", line 139:
+        label incorrect_2:
+and File "game/script.rpy", line 168:
+        label incorrect_2:
+
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Wed Nov 20 21:36:18 2024
+Thu Nov 21 09:38:31 2024
