@@ -118,30 +118,58 @@ label start:
     label a_q1:
         menu:
             '75.4g':
-                jump incorrect_1
+                jump a1_incorrect_1
 
             '65.6g':
-                jump correct
+                jump a1_correct
         
             '72.8g':
-                jump incorrect_2
+                jump a1_incorrect_2
 
-        label incorrect_1:
+        label a1_incorrect_1:
             $ menu_flag = False
             a "Hmmmm, someone hasnt been studying Perry's Chemical Engineering Handbook - try again."
             jump a_q1
 
-        label correct:
+        label a1_correct:
             $ menu_flag = True
             a "Wow - i'm impressed."
-            jump aucoin1_done
+            jump a1_done
      
-        label incorrect_2:
+        label a1_incorrect_2:
             $ menu_flag = False
-            e "You're gonna burn someone with that soap - try again."
+            a "You're gonna burn someone with that soap - try again."
             jump a_q1
    
-    label aucoin1_done:
+    label a1_done:
+    z "it seems my partner here may have underestimated you, I won't make the same mistake."
+    z "balance this equation!, _ CH4 + _ O2 -> CO2 + 2H2O"
+    label z_q1:
+        menu:
+            '1,2':
+                jump z1_correct
+
+            '1,1':
+                jump z1_incorrect_1
+        
+            '3,4':
+                jump z1_incorrect_2
+
+        label z1_incorrect_1:
+            $ menu_flag = False
+            z "How are you going to get anywhere in life if you can't balance a simple chemical equation!"
+            jump z_q1
+
+        label z1_correct:
+            $ menu_flag = True
+            z "Well that was a warm up question."
+            jump z1_done
+     
+        label z1_incorrect_2:
+            $ menu_flag = False
+            z "How are you going to get anywhere in life if you can't balance a simple chemical equation!"
+            jump z_q1
+    label z1_done:
 
 
         # ... the game continues here.
