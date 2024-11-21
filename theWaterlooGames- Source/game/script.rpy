@@ -19,29 +19,38 @@ define t = Character("Tool")
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornicopiabg = "conicopiabg.png"
+image cornucopuabg = "cornucopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
 image justin: 
     "justin.png"
     zoom 2
-image pendar cornicopia = "pendar cornicopia.png"
-image tam cornicopia = "tam cornicopia.png"
-image tam fighting = "tam cornicopia fighting.png"
-image tam tree = "tam tree.png"
+image pendar cornucopia = "pendar cornucopia.png"
+image tam cornucopia = "tam cornucopia.png"
+image tam fighting = "tam cornucopia fighting.png"
+image tam tree:
+    "tam tree.png"
+    zoom 3.5
 image marlyn:
     "marlyn.png"
     zoom 0.75
-image aucoin cornicopia = "aucoin cornicopia.png"
+image aucoin cornucopia = "aucoin cornucopia.png"
 image aucoin zino fight: 
     "aucoin zino fight.png"
     zoom 1.1
-image zino cornicopia = "zino cornicopia.png"
+image zino cornucopia = "zino cornucopia.png"
 image dean mary wells end = "dean mary wells end.png"
-image kamkar cornicopia = "kamkar cornicopia.png"
+image kamkar cornucopia = "kamkar cornucopia.png"
 image kamkar intro = "kamkar intro.png"
-
+image jamilton = "jamilton cornucopia.png"
+image jamilton fight = "jamilton talk.png"
+image bg river:
+    "bg river.jpg"
+    zoom 3.25
+image sleep:
+    "sleep.jpg"
+    zoom 4
 # The game starts here.
 
 #label start:
@@ -67,6 +76,10 @@ image kamkar intro = "kamkar intro.png"
 label start:
     # Blurb about the lore of the Waterloo Games, show title, Kamkar asks for name (cameron)
 
+    python:
+        name = renpy.input("What's your name?")
+        name = name.strip() or "Player"
+    define n = Character("[name]")
     # Justin and Marlyn explain how the games work, and then usher you off the go on the Tool show (maddy)
     scene stagebg   
     show justin:
@@ -84,16 +97,52 @@ label start:
 
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
+    scene cornicopiabg
+    show pendar cornucopia:
+        xalign 0.0
+        yalign 0.0
+    show tam cornucopia:
+        xalign 0.2
+        yalign 0.2
+    show aucoin cornucopia:
+        xalign 0.3
+        yalign 0.3
+    show jamilton cornucopia:
+        xalign 0.5
+        yalign 0.5
+    show zino cornucopia:
+        xalign 0.7
+        yalign 0.3
+    show kamkar cornucopia:
+        xalign 0.8
+        yalign 0.2
+    #show azevedo cornucopia:
+        #xalign 1.0
+        #yalign 0.0
 
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
 
 
     # After the fight, we rush off to a river, drink water, go to sleep in a tree(these can just be images of a river, tree, then black) (spruha)
-
-
+    scene bg river
+    "After the long fight with Azevedo, I went to a nearby stream to calm down."
+    "It was my first time ever fighting someone. How am I going to get through the rest of the games?"
+    "Maybe I can just sleep it off. I'll climb a nearby tree and sleep there, to be safe."
+    scene sleep
+    with Dissolve(.5)
+    # end this one w a black screen/fade thing
     # We wake up to a thud, who's that? It's Tam at the bottom! He tells us to come down and fight him(write some threats here) (spruha)
-
+    play sound "thud.mp3"
+    "What was that sound?"
+    scene forestbg
+    with Dissolve(.5)
+    play sound "thud.mp3"
+    scene tam tree
+    m "COME DOWN HERE AND FIGHT!"
+    n "No!! Please!!"
+    m "Come down and challenge me you coward! Or I'll chop this tree down where it stands."
+    "Oh no..."
 
     # Face off with Tam. At the end, he disappears. (spruha)
 
