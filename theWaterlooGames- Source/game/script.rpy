@@ -170,7 +170,87 @@ label start:
             z "How are you going to get anywhere in life if you can't balance a simple chemical equation!"
             jump z_q1
     label z1_done:
+    z "ready for another question huh,"
+    z '''Determine the equilibrium constant for a synthesis of ammonia reaction if the concentrations at equilibrium are 
+    \[N2] = 0.025M  \[H2] = 0.0013M \[NH3] = 0.028M '''
+    label z_q2:
+        menu:
+            '14274':
+                jump z2_correct
 
+            '45242':
+                jump z2_incorrect_1
+        
+            '0.4525':
+                jump z2_incorrect_2
+
+        label z2_incorrect_1:
+            $ menu_flag = False
+            z "C'mon, the rate law equation isn't that hard, try again!"
+            jump z_q2
+
+        label z2_correct:
+            $ menu_flag = True
+            z "You appear to be more of a worthy opponent than I thought."
+            jump z2_done
+     
+        label z2_incorrect_2:
+            $ menu_flag = False
+            z "that answer makes no sense at all!"
+            jump z_q2
+    label z2_done: 
+    a "alright, im getting bored. Let's turn this up a notch"
+    a "What is the organisation responsible for accrediting engineering programs? (acronym)"
+    label a_q2:
+        $ ans_aq2 = renpy.input("Answer: ")
+        $ is_true = (ans_aq2.strip().upper() == "CEAB")
+
+    # Display the result (True or False)
+    if is_true:
+        a "yas queen"
+        jump a2_done
+    else:
+        b "hmmmm someone doesn't seem to care if their education is accredited"
+        jump a_q2
+
+    label a2_done:
+    a "Now you're really asking for trouble, i'm going full force for this last question"
+    a "When making a hard bar of soap, is using KOH as lye is a better choice over NaOH?"
+    label a_q3:
+        menu:
+            'Yes':
+                jump a3_incorrect
+
+            'No':
+                jump a3_correct
+        
+
+        label a3_incorrect:
+            $ menu_flag = False
+            a "You're bound to make an awful mushy soap!"
+            jump a_q3
+
+        label a3_correct:
+            $ menu_flag = True
+            a "Noooo!!! I've lost to a master soap maker - Zino, destroy them!!!"
+            jump a3_done
+            
+    label a3_done:
+    z "It appears you've defeated my partner, don't assume i'll go down that easily"
+    z "for my final question: 2 gasses are separated by a barrier in a container. One side contains 2L of H2 (g) at 0.5 atm and the other side contains 1 L of N2 (g) at 2 atm. When the barrier is removed, what is the total pressure of the container?"
+    label z_q3:
+        $ ans_zq3 = renpy.input("How many atm? (1 sig. fig.): ")
+        $ is_true = (ans_zq3.strip() == "1")
+
+    # Display the result (True or False)
+    if is_true:
+        z "It...it can't be! I lost?! Nooooo!!!!"
+        jump z3_done
+    else:
+        z "I knew I had you with that question!!"
+        jump z_q3
+
+    label z3_done:
 
         # ... the game continues here.
  
