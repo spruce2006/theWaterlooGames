@@ -20,7 +20,9 @@ image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
 image cornicopiabg = "conicopiabg.png"
-image forestbg = "forestbg.png"
+image forestbg:
+    "forestbg.png"
+    zoom 4
 image justin: 
     "justin.png"
     zoom 2
@@ -32,7 +34,9 @@ image marlyn:
     "marlyn.png"
     zoom 0.75
 image aucoin cornicopia = "aucoin cornicopia.png"
-image aucoin zino fight = "aucoin zino fight.png"
+image aucoin zino fight: 
+    "aucoin zino fight.png"
+    zoom 1.1
 image zino cornicopia = "zino cornicopia.png"
 image dean mary wells end = "dean mary wells end.png"
 image kamkar cornicopia = "kamkar cornicopia.png"
@@ -102,9 +106,46 @@ label start:
 
     # We approach Zino and Aucoin and Hamilton fights them. Hamilton disappears! (maddy)
 
-
+    
     # Zino and Aucoin approach us and start to fight us. At the end, they disappear. (maddy)
+    scene forestbg
+    show aucoin zino fight:
+        yalign 0.2
+        xalign 0.5
+    a "why isn't the water boiling???"
+    z "because of the latent heat of vapourization"
+    a "How many grams of NaOH are required to saponify 500g of Corn oil (SAP value = 137)"
+    label a_q1:
+        menu:
+            '75.4g':
+                jump incorrect_1
 
+            '65.6g':
+                jump correct
+        
+            '72.8g':
+                jump incorrect_2
+
+        label incorrect_1:
+            $ menu_flag = False
+            a "Hmmmm, someone hasnt been studying Perry's Chemical Engineering Handbook - try again."
+            jump a_q1
+
+        label correct:
+            $ menu_flag = True
+            a "Wow - i'm impressed."
+            jump aucoin1_done
+     
+        label incorrect_2:
+            $ menu_flag = False
+            e "You're gonna burn someone with that soap - try again."
+            jump a_q1
+   
+    label aucoin1_done:
+
+
+        # ... the game continues here.
+ 
 
     # Looks into the sky, and there's 22 cannons. Looks like it's just me and Pendar left. The Gamemakers make an announcement that they replenished the Cornucopia. We decide to go, since we're running out of supplies. We go to the Cornucopia. Pendar is behind us and challenges us to a fight. (spruha)
 

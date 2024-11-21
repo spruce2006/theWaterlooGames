@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 76: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    j "whats good fam"
-    ^
+File "game/script.rpy", line 143: expected ':' not found.
+    label aucoin1_done
+                      ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Wed Nov 20 21:36:18 2024
+Thu Nov 21 09:18:52 2024
