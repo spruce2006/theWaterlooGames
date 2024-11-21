@@ -2,23 +2,29 @@
 errors listed below, and try again.
 
 
-The label incorrect_1 is defined twice, at File "game/script.rpy", line 129:
-        label incorrect_1:
-and File "game/script.rpy", line 158:
-        label incorrect_1:
+File "game/script.rpy", line 90: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    xalign 0.0
+    ^
 
+File "game/script.rpy", line 93: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    xalign 0.16666
+    ^
 
-The label correct is defined twice, at File "game/script.rpy", line 134:
-        label correct:
-and File "game/script.rpy", line 163:
-        label correct:
+File "game/script.rpy", line 96: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    xalign 0.33333
+    ^
 
+File "game/script.rpy", line 99: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    xalign 0.49999
+    ^
 
-The label incorrect_2 is defined twice, at File "game/script.rpy", line 139:
-        label incorrect_2:
-and File "game/script.rpy", line 168:
-        label incorrect_2:
+File "game/script.rpy", line 102: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    xalign 0.66666
+    ^
 
+File "game/script.rpy", line 105: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    xalign 0.83333
+    ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Thu Nov 21 09:38:31 2024
+Thu Nov 21 13:52:39 2024

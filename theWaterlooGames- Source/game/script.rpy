@@ -19,7 +19,7 @@ define t = Character("Tool")
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornicopiabg = "conicopiabg.png"
+image cornicopiabg = "cornicopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
@@ -39,9 +39,10 @@ image aucoin zino fight:
     zoom 1.1
 image zino cornicopia = "zino cornicopia.png"
 image dean mary wells end = "dean mary wells end.png"
-image kamkar cornicopia = "kamkar cornicopia.png"
+image kamkar cornucopia = "kamkar cornucopia.png"
 image kamkar intro = "kamkar intro.png"
-
+image jamilton = "jamilton cornucopia.png"
+image jamilton fight = "jamilton talk.png"
 # The game starts here.
 
 #label start:
@@ -84,6 +85,28 @@ label start:
 
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
+    scene cornicopiabg
+    show pendar cornicopia:
+        xalign 0.0
+        yalign 0.0
+    show tam cornicopia:
+        xalign 0.16666
+        yalign 0.16666
+    show aucoin cornicopia:
+        xalign 0.33333
+        yalign 0.33333
+    show jamilton cornucopia:
+        xalign 0.49999
+        yalign 0.49999
+    show zino cornicopia:
+        xalign 0.66666
+        yalign 0.33333
+    show kamkar cornucopia:
+        xalign 0.83333
+        yalign 0.16666
+    #show azevedo cornicopia:
+        #xalign 0.99999
+        #yalign 0.0
 
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
