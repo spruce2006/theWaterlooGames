@@ -37,6 +37,7 @@ image zino cornicopia = "zino cornicopia.png"
 image dean mary wells end = "dean mary wells end.png"
 image kamkar cornicopia = "kamkar cornicopia.png"
 image kamkar intro = "kamkar intro.png"
+
 # The game starts here.
 
 #label start:
