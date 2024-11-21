@@ -68,6 +68,10 @@ image jamilton fight = "jamilton talk.png"
 label start:
     # Blurb about the lore of the Waterloo Games, show title, Kamkar asks for name (cameron)
 
+    python:
+        name = renpy.input("What's your name?")
+        name = name.strip() or "Player"
+    define n = Character("[name]")
     # Justin and Marlyn explain how the games work, and then usher you off the go on the Tool show (maddy)
     scene stagebg   
     show justin:
@@ -114,9 +118,17 @@ label start:
 
     # After the fight, we rush off to a river, drink water, go to sleep in a tree(these can just be images of a river, tree, then black) (spruha)
 
-
+    # end this one w a black screen/fade thing
     # We wake up to a thud, who's that? It's Tam at the bottom! He tells us to come down and fight him(write some threats here) (spruha)
-
+    play sound "thud.mp3"
+    "What was that sound?"
+    scene forestbg
+    play sound "thud.mp3"
+    scene tam tree
+    t "COME DOWN HERE AND FIGHT!"
+    n "No!! Please!!"
+    t "Come down and challenge me you coward! Or I'll chop this tree down where it stands."
+    "Oh no..."
 
     # Face off with Tam. At the end, he disappears. (spruha)
 
