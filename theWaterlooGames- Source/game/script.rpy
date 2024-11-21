@@ -45,7 +45,9 @@ image kamkar cornucopia = "kamkar cornucopia.png"
 image kamkar intro = "kamkar intro.png"
 image jamilton = "jamilton cornucopia.png"
 image jamilton fight = "jamilton talk.png"
-image bg river = "bg river.jpg"
+image bg river:
+    "bg river.jpg"
+    zoom 3.25
 image sleep:
     "sleep.jpg"
     zoom 4
