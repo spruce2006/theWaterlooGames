@@ -45,6 +45,12 @@ image kamkar cornucopia = "kamkar cornucopia.png"
 image kamkar intro = "kamkar intro.png"
 image jamilton = "jamilton cornucopia.png"
 image jamilton fight = "jamilton talk.png"
+image bg river:
+    "bg river.jpg"
+    zoom 3.25
+image sleep:
+    "sleep.jpg"
+    zoom 4
 # The game starts here.
 
 #label start:
@@ -119,12 +125,18 @@ label start:
 
 
     # After the fight, we rush off to a river, drink water, go to sleep in a tree(these can just be images of a river, tree, then black) (spruha)
-    
+    scene bg river
+    "After the long fight with Azevedo, I went to a nearby stream to calm down."
+    "It was my first time ever fighting someone. How am I going to get through the rest of the games?"
+    "Maybe I can just sleep it off. I'll climb a nearby tree and sleep there, to be safe."
+    scene sleep
+    with Dissolve(.5)
     # end this one w a black screen/fade thing
     # We wake up to a thud, who's that? It's Tam at the bottom! He tells us to come down and fight him(write some threats here) (spruha)
     play sound "thud.mp3"
     "What was that sound?"
     scene forestbg
+    with Dissolve(.5)
     play sound "thud.mp3"
     scene tam tree
     m "COME DOWN HERE AND FIGHT!"
