@@ -31,7 +31,7 @@ image tam cornicopia = "tam cornicopia.png"
 image tam fighting = "tam cornicopia fighting.png"
 image tam tree:
     "tam tree.png"
-    zoom 4
+    zoom 3.5
 image marlyn:
     "marlyn.png"
     zoom 0.75
@@ -119,7 +119,7 @@ label start:
 
 
     # After the fight, we rush off to a river, drink water, go to sleep in a tree(these can just be images of a river, tree, then black) (spruha)
-
+    
     # end this one w a black screen/fade thing
     # We wake up to a thud, who's that? It's Tam at the bottom! He tells us to come down and fight him(write some threats here) (spruha)
     play sound "thud.mp3"
