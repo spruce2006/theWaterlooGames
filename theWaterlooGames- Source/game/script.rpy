@@ -19,7 +19,7 @@ define t = Character("Tool")
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornicopiabg = "conicopiabg.png"
+image cornicopiabg = "cornicopiabg.png"
 image forestbg = "forestbg.png"
 image justin: 
     "justin.png"
@@ -80,7 +80,15 @@ label start:
 
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
-
+    #show cornicopiabg (need to change bg size (too small))
+    #with fade
+    #show person1
+    #show person1
+    #show person1
+    #show person1
+    #show person1
+    #show person1
+    #show person1
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
 
