@@ -1,26 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 243, in script
-    $ is_true = (ans_zq2.strip() == "1")
-  File "game/script.rpy", line 243, in <module>
-    $ is_true = (ans_zq2.strip() == "1")
-NameError: name 'ans_zq2' is not defined
+  File "game/script.rpy", line 266, in script
+    b "hmmmm someone doesn't seem to care if their education is accredited"
+Exception: Sayer 'b' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 243, in script
-    $ is_true = (ans_zq2.strip() == "1")
-  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 821, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 243, in <module>
-    $ is_true = (ans_zq2.strip() == "1")
-NameError: name 'ans_zq2' is not defined
+  File "game/script.rpy", line 266, in script
+    b "hmmmm someone doesn't seem to care if their education is accredited"
+  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'b' is not defined.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.3.24111502
 theWaterlooGames 1.0
-Thu Nov 21 17:23:06 2024
+Thu Nov 21 18:49:16 2024

@@ -91,7 +91,11 @@ label start:
         yalign 0.2
 
     show marlyn behind justin
-    j "whats good fam"
+    j "There you are! C'mon, you're supposed to be on The Tool Show in 5 minutes!!! Have they explained what you're gonna be doing?"
+    n "...no I'm even sure how to fight my oponents when the time comes."
+    j "Y'know what, I so resonate with that"
+    y "Don't worry, you seem like a tough fighter. When the Games begin, you'll face off your opponents and defeat them by answering their questions, but beware, I've heard there's some tough proffessors from the districts this year."
+    j "Now i'd love to chit chat some more, but you've gotta head on stage now"
 
     # The Tool asks you a bunch of questions; just interactive not for points (snack)
 
@@ -259,12 +263,12 @@ label start:
         a "yas queen"
         jump a2_done
     else:
-        b "hmmmm someone doesn't seem to care if their education is accredited"
+        a "hmmmm someone doesn't seem to care if their education is accredited"
         jump a_q2
 
     label a2_done:
     a "Now you're really asking for trouble, i'm going full force for this last question"
-    a "When making a hard bar of soap, is using KOH as lye is a better choice over NaOH?"
+    a "When making a hard bar of soap, is using KOH as lye a better choice over NaOH?"
     label a_q3:
         menu:
             'Yes':
@@ -281,7 +285,7 @@ label start:
 
         label a3_correct:
             $ menu_flag = True
-            a "Noooo!!! I've lost to a master soap maker - Zino, destroy them!!!"
+            a "Noooo!!! I've lost to [name] the master soap maker - Zino, destroy them!!!"
             jump a3_done
             
     label a3_done:
