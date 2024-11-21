@@ -19,25 +19,25 @@ define t = Character("Tool")
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornicopiabg = "cornicopiabg.png"
+image cornucopiabg = "cornucopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
 image justin: 
     "justin.png"
     zoom 2
-image pendar cornicopia = "pendar cornicopia.png"
-image tam cornicopia = "tam cornicopia.png"
-image tam fighting = "tam cornicopia fighting.png"
+image pendar cornucopia = "pendar cornucopia.png"
+image tam cornucopia = "tam cornucopia.png"
+image tam fighting = "tam cornucopia fighting.png"
 image tam tree = "tam tree.png"
 image marlyn:
     "marlyn.png"
     zoom 0.75
-image aucoin cornicopia = "aucoin cornicopia.png"
+image aucoin cornucopia = "aucoin cornucopia.png"
 image aucoin zino fight: 
     "aucoin zino fight.png"
     zoom 1.1
-image zino cornicopia = "zino cornicopia.png"
+image zino cornucopia = "zino cornucopia.png"
 image dean mary wells end = "dean mary wells end.png"
 image kamkar cornucopia = "kamkar cornucopia.png"
 image kamkar intro = "kamkar intro.png"
@@ -89,26 +89,26 @@ label start:
 
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
-    scene cornicopiabg
-    show pendar cornicopia:
+    scene cornucopiabg
+    show pendar cornucopia:
         xalign 0.0
         yalign 0.0
-    show tam cornicopia:
+    show tam cornucopia:
         xalign 0.16666
         yalign 0.16666
-    show aucoin cornicopia:
+    show aucoin cornucopia:
         xalign 0.33333
         yalign 0.33333
     show jamilton cornucopia:
         xalign 0.49999
         yalign 0.49999
-    show zino cornicopia:
+    show zino cornucopia:
         xalign 0.66666
         yalign 0.33333
     show kamkar cornucopia:
         xalign 0.83333
         yalign 0.16666
-    #show azevedo cornicopia:
+    #show azevedo cornucopia:
         #xalign 0.99999
         #yalign 0.0
 
