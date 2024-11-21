@@ -19,27 +19,27 @@ define t = Character("Tool")
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornucopiabg = "cornucopiabg.png"
+image cornicopiabg = "cornicopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
 image justin: 
     "justin.png"
     zoom 2
-image pendar cornucopia = "pendar cornucopia.png"
-image tam cornucopia = "tam cornucopia.png"
-image tam fighting = "tam cornucopia fighting.png"
+image pendar cornicopia = "pendar cornicopia.png"
+image tam cornicopia = "tam cornicopia.png"
+image tam fighting = "tam cornicopia fighting.png"
 image tam tree:
     "tam tree.png"
     zoom 3.5
 image marlyn:
     "marlyn.png"
     zoom 0.75
-image aucoin cornucopia = "aucoin cornucopia.png"
+image aucoin cornicopia = "aucoin cornicopia.png"
 image aucoin zino fight: 
     "aucoin zino fight.png"
     zoom 1.1
-image zino cornucopia = "zino cornucopia.png"
+image zino cornicopia = "zino cornicopia.png"
 image dean mary wells end = "dean mary wells end.png"
 image kamkar cornucopia = "kamkar cornucopia.png"
 image kamkar intro = "kamkar intro.png"
@@ -91,26 +91,26 @@ label start:
 
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
-    scene cornucopiabg
-    show pendar cornucopia:
+    scene cornicopiabg
+    show pendar cornicopia:
         xalign 0.0
         yalign 0.0
-    show tam cornucopia:
+    show tam cornicopia:
         xalign 0.16666
         yalign 0.16666
-    show aucoin cornucopia:
+    show aucoin cornicopia:
         xalign 0.33333
         yalign 0.33333
     show jamilton cornucopia:
         xalign 0.49999
         yalign 0.49999
-    show zino cornucopia:
+    show zino cornicopia:
         xalign 0.66666
         yalign 0.33333
     show kamkar cornucopia:
         xalign 0.83333
         yalign 0.16666
-    #show azevedo cornucopia:
+    #show azevedo cornicopia:
         #xalign 0.99999
         #yalign 0.0
 
@@ -119,7 +119,7 @@ label start:
 
 
     # After the fight, we rush off to a river, drink water, go to sleep in a tree(these can just be images of a river, tree, then black) (spruha)
-
+    
     # end this one w a black screen/fade thing
     # We wake up to a thud, who's that? It's Tam at the bottom! He tells us to come down and fight him(write some threats here) (spruha)
     play sound "thud.mp3"
