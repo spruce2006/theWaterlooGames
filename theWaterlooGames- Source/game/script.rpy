@@ -29,7 +29,9 @@ image justin:
 image pendar cornicopia = "pendar cornicopia.png"
 image tam cornicopia = "tam cornicopia.png"
 image tam fighting = "tam cornicopia fighting.png"
-image tam tree = "tam tree.png"
+image tam tree:
+    "tam tree.png"
+    zoom 4
 image marlyn:
     "marlyn.png"
     zoom 0.75
@@ -125,9 +127,9 @@ label start:
     scene forestbg
     play sound "thud.mp3"
     scene tam tree
-    t "COME DOWN HERE AND FIGHT!"
+    m "COME DOWN HERE AND FIGHT!"
     n "No!! Please!!"
-    t "Come down and challenge me you coward! Or I'll chop this tree down where it stands."
+    m "Come down and challenge me you coward! Or I'll chop this tree down where it stands."
     "Oh no..."
 
     # Face off with Tam. At the end, he disappears. (spruha)
