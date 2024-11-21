@@ -63,11 +63,16 @@ label start:
     # Blurb about the lore of the Waterloo Games, show title, Kamkar asks for name (cameron)
 
     # Justin and Marlyn explain how the games work, and then usher you off the go on the Tool show (maddy)
-    scene stagebg  
-    show marlyn:
-        xalign 1 yalign 0  
+    scene stagebg   
     show justin:
-        xalign 0 yalign 0.8
+        xalign 0.0 
+        yalign 0.4
+
+    show marlyn:
+        xalign 1.0 
+        yalign 0.2
+
+    show marlyn behind justin
     j "whats good fam"
 
     # The Tool asks you a bunch of questions; just interactive not for points (snack)

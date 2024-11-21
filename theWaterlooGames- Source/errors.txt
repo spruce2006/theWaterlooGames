@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 25: Line is indented, but the preceding image statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    zoom 3
+File "game/script.rpy", line 76: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    j "whats good fam"
     ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Wed Nov 20 20:38:35 2024
+Wed Nov 20 21:36:18 2024
