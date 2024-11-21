@@ -21,15 +21,22 @@ image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
 image cornicopiabg = "conicopiabg.png"
 image forestbg = "forestbg.png"
-image justin = "justin.png"
+image justin: 
+    "justin.png"
+    zoom 2
 image pendar cornicopia = "pendar cornicopia.png"
 image tam cornicopia = "tam cornicopia.png"
 image tam fighting = "tam cornicopia fighting.png"
 image tam tree = "tam tree.png"
-image marlyn = "marlyn.png"
+image marlyn:
+    "marlyn.png"
+    zoom 0.75
 image aucoin cornicopia = "aucoin cornicopia.png"
 image aucoin zino fight = "aucoin zino fight.png"
 image zino cornicopia = "zino cornicopia.png"
+image dean mary wells end = "dean mary wells end.png"
+image kamkar cornicopia = "kamkar cornicopia.png"
+image kamkar intro = "kamkar intro.png"
 # The game starts here.
 
 #label start:
@@ -56,10 +63,13 @@ label start:
     # Blurb about the lore of the Waterloo Games, show title, Kamkar asks for name (cameron)
 
     # Justin and Marlyn explain how the games work, and then usher you off the go on the Tool show (maddy)
-    scene stagebg
-    show justin
+    scene stagebg  
+    show marlyn:
+        xalign 1 yalign 0  
+    show justin:
+        xalign 0 yalign 0.8
     j "whats good fam"
-    
+
     # The Tool asks you a bunch of questions; just interactive not for points (snack)
 
 

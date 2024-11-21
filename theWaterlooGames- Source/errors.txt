@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 44: end of line expected.
-    scene stagebg.png
-                 ^
+File "game/script.rpy", line 25: Line is indented, but the preceding image statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    zoom 3
+    ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Wed Nov 20 18:06:32 2024
+Wed Nov 20 20:38:35 2024
