@@ -19,7 +19,8 @@ define t = Character("Tool")
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornucopuabg = "cornucopiabg.png"
+image cornucopiabg:
+    "cornucopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
@@ -96,11 +97,16 @@ label start:
         yalign 0.2
 
     show marlyn behind justin
-    j "There you are! C'mon, you're supposed to be on The Tool Show in 5 minutes!!! Have they explained what you're gonna be doing?"
-    n "...no I'm even sure how to fight my oponents when the time comes."
+    j "There you are! C'mon, you're supposed to be on The Tool Show in 5 minutes!!!"
+    n "Wait! I don't even know what's happening right now" 
     j "Y'know what, I so resonate with that"
-    y "Don't worry, you seem like a tough fighter. When the Games begin, you'll face off your opponents and defeat them by answering their questions, but beware, I've heard there's some tough proffessors from the districts this year."
+    y "Don't worry, you seem like a tough fighter. When the Games begin, you'll face off your opponents and defeat them by answering their questions, but beware, I've heard there's some tough professors from the districts this year."
+    play sound "audience clapping.mp3" 
     j "Now i'd love to chit chat some more, but you've gotta head on stage now"
+    n "stage?!?!"
+    scene sleep
+    stop sound fadeout 1.0
+    with Dissolve(.5)
 
     # The Tool asks you a bunch of questions; just interactive not for points (snack)
 
@@ -108,7 +114,7 @@ label start:
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
     scene cornicopiabg
     show pendar cornucopia:
-        xalign 0.0
+        xalign 0.8
         yalign 0.0
     show tam cornucopia:
         xalign 0.2
@@ -401,7 +407,7 @@ label m_end:
         z "It...it can't be! I lost?! Nooooo!!!!"
         jump z3_done
     else:
-        z "I knew I had you with that question!!"
+        z "I see you can't handle the pressure of that question!!"
         jump z_q3
 
     label z3_done:
