@@ -30,39 +30,76 @@ image jhforest:
 image justin: 
     "justin.png"
     zoom 2
+
+
 image pendar cornucopia:
      "pendar cornucopia.png"
-     zoom 0.3
+     zoom 0.35
+image pendar cornucopiatwo:
+     "pendar cornucopia.png"
+     zoom 0.6
+
+
 image tam cornucopia:
     "tam cornucopia.png"
-    zoom 1.75
+    zoom 1.23
+image tam cornucopiatwo:
+    "tam cornucopia.png"
+    zoom 2
 image tam fighting:
     "tam fighting.png"
     zoom 1.75
 image tam tree:
     "tam tree.png"
     zoom 3.5
+
+
+
 image intro:
     "firstintroscene.png"
     zoom 0.65
 image marlyn:
     "marlyn.png"
     zoom 0.75
+
+
 image aucoin cornucopia:
      "aucoin cornucopia.png"
-     zoom 0.5
+     zoom 0.3
+image aucoin cornucopiatwo:
+     "aucoin cornucopia.png"
+     zoom 0.8
 image aucoin zino fight: 
     "aucoin zino fight.png"
-    zoom 1.1
+    zoom 0.7
+
+
 image zino cornucopia:
      "zino cornucopia.png"
-     zoom 0.5
+     zoom 0.27
+image zino cornucopiatwo:
+     "zino cornucopia.png"
+     zoom 0.8
+
+
 image dean mary wells end = "dean mary wells end.png"
-image kamkar cornucopia = "kamkar cornucopia.png"
+image kamkar cornucopia:
+     "kamkar cornucopia.png"
+     zoom 0.72
+image kamkar cornucopiatwo:
+     "kamkar cornucopia.png"
+     zoom 1
 image kamkar intro = "kamkar intro.png"
+
+
 image jamilton cornucopia:
      "jamilton cornucopia.png"
-     zoom 0.5
+     zoom 0.31
+image jamilton cornucopiatwo:
+     "jamilton cornucopia.png"
+     zoom 0.8
+
+
 image jamilton talk = "jamilton talk.png"
 image bg river:
     "bg river.jpg"
@@ -127,28 +164,71 @@ label start:
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
     scene intro
     show pendar cornucopia:
-        xalign -0.1
-        yalign 0.4
+        xalign 0.0
+        yalign 0.7
     show tam cornucopia:
-        xalign 0.8
-        yalign 0.2
+        xalign 1.0
+        yalign 0.7
     show aucoin cornucopia:
-        xalign 0.3
-        yalign 0.3
+        xalign 0.48
+        yalign 0.2
     show jamilton cornucopia:
-        xalign 0.5
-        yalign 0.5
+        xalign 0.8
+        yalign 0.57
     show zino cornucopia:
-        xalign 0.2
+        xalign 0.29
         yalign 0.3
     show kamkar cornucopia:
-        xalign 0.6
+        xalign 0.02
         yalign 0.2
     #show azevedo cornucopia:
         #xalign 1.0
         #yalign 0.0
     "Wow, there are a lot more tributes than I thought there would be..."
     "Wait I think I recognize some of these people..."
+
+    scene intro
+    show pendar cornucopiatwo:
+        xalign 0.5
+        yalign 0.5
+    "Hey! Thats Pendar!"
+
+    scene intro
+    show kamkar cornucopiatwo:
+        xalign 0.5
+        yalign 0.5
+    "Hey! Thats Kamkar!"
+
+    scene intro
+    show zino cornucopiatwo:
+        xalign 0.5
+        yalign 0.5
+    "Hey! Thats Zino!"
+
+    scene intro
+    show aucoin cornucopiatwo:
+        xalign 0.5
+        yalign 0.5
+    "Hey! Thats Maucoin!"
+
+    scene intro
+    show azevedo cornucopiatwo:
+        xalign 0.5
+        yalign 0.5
+    "Hey! Thats azevedo!"
+
+    scene intro
+    show jamilton cornucopiatwo:
+        xalign 0.5
+        yalign 0.5
+    "Hey! Thats jamilton!"
+
+    scene intro
+    show tam cornucopiatwo:
+        xalign 0.5
+        yalign 0.5
+    "Hey! Thats tam!"
+
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
 
