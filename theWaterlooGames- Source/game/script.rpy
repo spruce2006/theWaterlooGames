@@ -97,11 +97,16 @@ label start:
         yalign 0.2
 
     show marlyn behind justin
-    j "There you are! C'mon, you're supposed to be on The Tool Show in 5 minutes!!! Have they explained what you're gonna be doing?"
-    n "...no I'm even sure how to fight my oponents when the time comes."
+    j "There you are! C'mon, you're supposed to be on The Tool Show in 5 minutes!!!"
+    n "Wait! I don't even know what's happening right now" 
     j "Y'know what, I so resonate with that"
-    y "Don't worry, you seem like a tough fighter. When the Games begin, you'll face off your opponents and defeat them by answering their questions, but beware, I've heard there's some tough proffessors from the districts this year."
+    y "Don't worry, you seem like a tough fighter. When the Games begin, you'll face off your opponents and defeat them by answering their questions, but beware, I've heard there's some tough professors from the districts this year."
+    play sound "audience clapping.mp3" 
     j "Now i'd love to chit chat some more, but you've gotta head on stage now"
+    n "stage?!?!"
+    scene sleep
+    stop sound fadeout 1.0
+    with Dissolve(.5)
 
     # The Tool asks you a bunch of questions; just interactive not for points (snack)
 

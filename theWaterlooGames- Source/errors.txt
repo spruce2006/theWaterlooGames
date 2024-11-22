@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 237: expected ':' not found.
-    label m3_incorrect_2
-                        ^
+File "game/script.rpy", line 105: expected end of line
+    stop music fade out 4.0
+               ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Thu Nov 21 22:00:50 2024
+Fri Nov 22 00:20:43 2024
