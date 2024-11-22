@@ -1,228 +1,50 @@
-<<<<<<< Updated upstream
-2024-11-22 05:21:55 UTC
-Windows-10-10.0.22631
-=======
-2024-11-22 03:15:52 UTC
+2024-11-22 13:16:44 UTC
 macOS-14.6.1-arm64-arm-64bit
->>>>>>> Stashed changes
 Ren'Py 8.3.3.24111502
 
 Early init took 0.04s
-Loading error handling took 0.03s
-<<<<<<< Updated upstream
-Loading script took 0.17s
-Loading save slot metadata took 0.02s
-=======
-Loading script took 0.13s
+Loading error handling took 0.11s
+Loading script took 0.85s
 Loading save slot metadata took 0.03s
->>>>>>> Stashed changes
 Loading persistent took 0.00s
-Running init code took 0.04s
+Running init code took 0.07s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.01s
 Index archives took 0.00s
+Backing up script files to '/Users/spruha/Library/RenPy/backups/theWaterlooGames- Source':
 Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.03s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
+DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.29s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 88.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.04s
 Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Prepare screens took 0.00s
 Running _start took 0.00s
-Interface start took 0.41s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2240, 1400)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Xe Graphics'
-Version: b'4.6.0 - Build 31.0.101.4502'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2019, 1136) drawable=(2019, 1136)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 37.83s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\msmad\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-<<<<<<< Updated upstream
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.46s
-=======
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.24s
->>>>>>> Stashed changes
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2240, 1400)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Xe Graphics'
-Version: b'4.6.0 - Build 31.0.101.4502'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2019, 1136) drawable=(2019, 1136)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 54.83s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\msmad\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.36s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2240, 1400)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Xe Graphics'
-Version: b'4.6.0 - Build 31.0.101.4502'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2019, 1136) drawable=(2019, 1136)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 84.45s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\msmad\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.37s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2240, 1400)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Xe Graphics'
-Version: b'4.6.0 - Build 31.0.101.4502'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2019, 1136) drawable=(2019, 1136)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 99.96s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\msmad\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.38s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2240, 1400)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Xe Graphics'
-Version: b'4.6.0 - Build 31.0.101.4502'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2019, 1136) drawable=(2019, 1136)
-Maximum texture size: 4096x4096
