@@ -33,7 +33,7 @@ image pendar cornucopia = "pendar cornucopia.png"
 image tam cornucopia = "tam cornucopia.png"
 image tam fighting:
     "tam fighting.png"
-    zoom 1.5
+    zoom 1.75
 image tam tree:
     "tam tree.png"
     zoom 3.5
@@ -156,7 +156,7 @@ label start:
     # Face off with Tam. At the end, he disappears. (spruha)
 scene forestbg
 show tam fighting:
-    yalign 0.45 
+    yalign 0.5 
     xalign 0.55
 m "If you really have what it takes to win these games, then answer these questions."
 label m_q1:
