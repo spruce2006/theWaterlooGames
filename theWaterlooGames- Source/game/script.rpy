@@ -152,7 +152,97 @@ label start:
     "Oh no..."
 
     # Face off with Tam. At the end, he disappears. (spruha)
+scene forestbg
+    show tam fighting
+        yalign 0.0 
+        xalign 0.55 
+    m "If you really have what it takes to win these games, then answer these questions."
+    label m_q1:
+        m "Convert 360 kg/K to lb/R. Answer with the correct number of significant digits."
+        menu:
+            "440 lb/R":
+                jump m1_correct
+            
+            "450 lb/R":
+                jump m1_incorrect_1
 
+            "430 lb/R":
+                jump m1_incorrect_2
+
+        label m1_correct:
+            $ menu_flag = True
+            m "It's correct, but don't celebrate so prematurely."
+            jump m_q2
+
+        label m1_incorrect_1:
+            $ menu_flag = False
+            m "Hah! You can't even answer such a simple question?"
+            jump m_q1
+
+        label m1_incorrect_2:
+            $ menu_flag = False
+            m "Hah! You can't even answer such a simple question?"
+            jump m_q1
+
+    label m_q2:
+        m "A graph of temperature(K) against pressure(kPa) has has the following plotted points:" 
+        m "(256, 132), (275, 208), and (294, 284). What is the slope of this graph?"
+        menu:
+            "3.9 k/kPa":
+                jump m2_incorrect_1
+
+            "4.0 kPa/K":
+                jump m2_incorrect_2
+
+            "4.0 K/kPa":
+                jump m2_correct 
+
+        label m2_incorrect_1:
+            $ menu_flag = False
+            m "I didn't realize it was possible to meet someone this stupid. Try again."
+            jump m_q2
+
+        label m2_incorrect_2:
+            $ menu_flag = False
+            m "I didn't realize it was possible to meet someone this stupid. Try again."
+            jump m_q2
+
+        label m2_correct:
+            $ menu_flag = True
+            m "Urgh! You'll never get this last one!"
+            jump m_q3
+
+    label m_q3:
+        m "Mercury has an SG of 13.6. How many pounds of mercury are there in a 300 mL sample?"
+        menu:
+            "8.99 lbm":
+                jump m3_correct
+
+            "7.64 lbm":
+                jump m3_incorrect_1
+
+            "6.87 lbm":
+                jump m3_incorrect_2
+
+        label m3_correct:
+            $ menu_flag = True
+            m "No! No! It's not possible! You couldn't have beat me!"
+            jump m_end
+
+        label m3_incorrect_1:
+            $ menu_flag = False
+            m "I knew you weren't good enough to compete here."
+            jump m_q3
+
+        label m3_incorrect_2
+            $ menu_flag = False
+            m "I knew you weren't good enough to compete here."
+            jump m_q3
+
+    label m_end:
+        m "I suppose I underestimated you."
+        m "But mark my words..."
+        m "You will rue this day."
 
     # We run away, and after like one frame of just getting away, we spot Jamilton, and fight him. (snack)
     scene jhforest
