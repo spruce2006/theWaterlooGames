@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 159: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    m "If you really have what it takes to win these games, then answer these questions."
-                                                                                         ^
+File "game/script.rpy", line 160: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    label m_q1:
+    ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Thu Nov 21 21:56:30 2024
+Thu Nov 21 21:57:33 2024
