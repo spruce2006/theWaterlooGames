@@ -38,6 +38,7 @@ image tam fighting:
 image tam tree:
     "tam tree.png"
     zoom 3.5
+image intro = "introscene.jpg"
 image marlyn:
     "marlyn.png"
     zoom 0.75
@@ -112,7 +113,7 @@ label start:
 
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
-    scene cornicopiabg
+    scene intro
     show pendar cornucopia:
         xalign 0.8
         yalign 0.0
