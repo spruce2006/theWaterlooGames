@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 211: end of line expected.
-    jump label a2_done
-               ^
-
-File "game/script.rpy", line 248: end of line expected.
-    jump label z3_done
-               ^
+File "game/script.rpy", line 159: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "I barely escaped Tam's wrath, running further into a hillier part of the forest. After nearly tripping over a large root, I spotted him. Jordan Hamilton—and he spotted me."
+    ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Thu Nov 21 17:21:41 2024
+Thu Nov 21 21:45:44 2024

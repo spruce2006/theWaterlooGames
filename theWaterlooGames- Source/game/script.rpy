@@ -47,7 +47,7 @@ image dean mary wells end = "dean mary wells end.png"
 image kamkar cornucopia = "kamkar cornucopia.png"
 image kamkar intro = "kamkar intro.png"
 image jamilton = "jamilton cornucopia.png"
-image jamilton fight = "jamilton talk.png"
+image jamilton talk = "jamilton talk.png"
 image bg river:
     "bg river.jpg"
     zoom 3.25
@@ -155,11 +155,16 @@ label start:
 
 
     # We run away, and after like one frame of just getting away, we spot Jamilton, and fight him. (snack)
-
-
-    # After fighting Hamilton, he's like "wait wait wait let's just team up and take down Zino and Aucoin! They're too powerful for either of us to fight them alone. We're better together." (snack)
     scene jhforest
+    show jamilton talk:
+        yalign 0.35
+        xalign 0.5
     "I barely escaped Tam's wrath, running further into a hillier part of the forest. After nearly tripping over a large root, I spotted him. Jordan Hamilton—and he spotted me."
+    h "You really thought you could sneak up on me, huh?"
+    n "What—no, it's not like that!"
+    # fight will happen here
+    # After fighting Hamilton, he's like "wait wait wait let's just team up and take down Zino and Aucoin! They're too powerful for either of us to fight them alone. We're better together." (snack)
+    
 
     # We approach Zino and Aucoin and Hamilton fights them. Hamilton disappears! (maddy)
 
