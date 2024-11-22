@@ -23,6 +23,7 @@ image cornucopuabg = "cornucopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
+image jhforest = 'jh forest.jpeg'
 image justin: 
     "justin.png"
     zoom 2
