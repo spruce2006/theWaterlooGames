@@ -194,10 +194,10 @@ label m_q2:
             jump m2_incorrect_1
 
         "4.0 kPa/K":
-            jump m2_incorrect_2
+            jump m2_correct
 
         "4.0 K/kPa":
-            jump m2_correct 
+            jump m2_incorrect_2
 
     label m2_incorrect_1:
         $ menu_flag = False
