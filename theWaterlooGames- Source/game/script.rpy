@@ -234,7 +234,7 @@ label m_q3:
         m "I knew you weren't good enough to compete here."
         jump m_q3
 
-    label m3_incorrect_2
+    label m3_incorrect_2:
         $ menu_flag = False
         m "I knew you weren't good enough to compete here."
         jump m_q3
