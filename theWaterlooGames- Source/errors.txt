@@ -3,8 +3,8 @@ errors listed below, and try again.
 
 
 File "game/script.rpy", line 156: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    show tam fighting
+    show tam fighting:
     ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Thu Nov 21 21:53:43 2024
+Thu Nov 21 21:55:02 2024
