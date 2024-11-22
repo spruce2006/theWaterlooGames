@@ -31,7 +31,7 @@ image justin:
     zoom 2
 image pendar cornucopia = "pendar cornucopia.png"
 image tam cornucopia = "tam cornucopia.png"
-image tam fighting = "tam cornucopia fighting.png"
+image tam fighting = "tam fighting.png"
 image tam tree:
     "tam tree.png"
     zoom 3.5
