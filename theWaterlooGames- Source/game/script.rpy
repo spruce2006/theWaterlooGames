@@ -19,7 +19,8 @@ define t = Character("Tool")
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornucopuabg = "cornucopiabg.png"
+image cornucopiabg:
+    "cornucopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
@@ -108,7 +109,7 @@ label start:
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
     scene cornicopiabg
     show pendar cornucopia:
-        xalign 0.0
+        xalign 0.8
         yalign 0.0
     show tam cornucopia:
         xalign 0.2
