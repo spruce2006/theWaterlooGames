@@ -1,11 +1,21 @@
+<<<<<<< Updated upstream
 2024-11-22 05:21:55 UTC
 Windows-10-10.0.22631
+=======
+2024-11-22 03:15:52 UTC
+macOS-14.6.1-arm64-arm-64bit
+>>>>>>> Stashed changes
 Ren'Py 8.3.3.24111502
 
 Early init took 0.04s
 Loading error handling took 0.03s
+<<<<<<< Updated upstream
 Loading script took 0.17s
 Loading save slot metadata took 0.02s
+=======
+Loading script took 0.13s
+Loading save slot metadata took 0.03s
+>>>>>>> Stashed changes
 Loading persistent took 0.00s
 Running init code took 0.04s
 Loading analysis data took 0.01s
@@ -70,9 +80,15 @@ Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
+<<<<<<< Updated upstream
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.46s
+=======
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.24s
+>>>>>>> Stashed changes
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2240, 1400)
