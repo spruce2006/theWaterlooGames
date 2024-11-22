@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 156: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    show tam fighting:
-    ^
+File "game/script.rpy", line 159: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    m "If you really have what it takes to win these games, then answer these questions."
+                                                                                         ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Thu Nov 21 21:55:02 2024
+Thu Nov 21 21:56:30 2024
