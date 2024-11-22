@@ -23,7 +23,9 @@ image cornucopuabg = "cornucopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
-image jhforest = 'jh forest.jpeg'
+image jhforest: 
+    'jh forest.jpg'
+    zoom 2
 image justin: 
     "justin.png"
     zoom 2
@@ -156,7 +158,8 @@ label start:
 
 
     # After fighting Hamilton, he's like "wait wait wait let's just team up and take down Zino and Aucoin! They're too powerful for either of us to fight them alone. We're better together." (snack)
-
+    scene jhforest
+    "I barely escaped Tam's wrath, running further into a hillier part of the forest. After nearly tripping over a large root, I spotted him. Jordan Hamilton—and he spotted me."
 
     # We approach Zino and Aucoin and Hamilton fights them. Hamilton disappears! (maddy)
 
