@@ -57,6 +57,8 @@ image bg river:
 image sleep:
     "sleep.jpg"
     zoom 4
+image bush:
+    "bush final.png"
 # The game starts here.
 
 #label start:
@@ -265,8 +267,24 @@ label m_end:
     
 
     # We approach Zino and Aucoin and Hamilton fights them. Hamilton disappears! (maddy)
+    scene forestbg 
+    show aucoin zino fight:
+        zoom 0.75
+        yalign 0.5
+        xalign 1.0
+    show bush:
+        zoom 2
+        yalign 1.3
+        xalign 0.8
 
-    
+    show jamilton talk:
+        yalign 0.1
+        xalign -0.5
+        xzoom -1
+        zoom 0.8 
+    z "what are you doing here"
+    h "stay on screen pls"
+
     # Zino and Aucoin approach us and start to fight us. At the end, they disappear. (maddy)
     scene forestbg
     show aucoin zino fight:
@@ -293,7 +311,7 @@ label m_end:
 
         label a1_correct:
             $ menu_flag = True
-            a "Wow - i'm impressed."
+            a "Wow - i'm impressed." with vpunch
             jump a1_done
      
         label a1_incorrect_2:
@@ -367,7 +385,8 @@ label m_end:
 
     # Display the result (True or False)
     if is_true:
-        a "yas queen"
+        a "yas queen" 
+
         jump a2_done
     else:
         a "hmmmm someone doesn't seem to care if their education is accredited"
