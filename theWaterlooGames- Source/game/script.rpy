@@ -19,16 +19,22 @@ define t = Character("Tool")
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornucopuabg = "cornucopiabg.png"
+image cornucopiabg:
+    "cornucopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
+image jhforest: 
+    'jh forest.jpg'
+    zoom 2
 image justin: 
     "justin.png"
     zoom 2
 image pendar cornucopia = "pendar cornucopia.png"
 image tam cornucopia = "tam cornucopia.png"
-image tam fighting = "tam cornucopia fighting.png"
+image tam fighting:
+    "tam fighting.png"
+    zoom 1.75
 image tam tree:
     "tam tree.png"
     zoom 3.5
@@ -44,7 +50,7 @@ image dean mary wells end = "dean mary wells end.png"
 image kamkar cornucopia = "kamkar cornucopia.png"
 image kamkar intro = "kamkar intro.png"
 image jamilton = "jamilton cornucopia.png"
-image jamilton fight = "jamilton talk.png"
+image jamilton talk = "jamilton talk.png"
 image bg river:
     "bg river.jpg"
     zoom 3.25
@@ -103,7 +109,7 @@ label start:
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
     scene cornicopiabg
     show pendar cornucopia:
-        xalign 0.0
+        xalign 0.8
         yalign 0.0
     show tam cornucopia:
         xalign 0.2
@@ -149,13 +155,109 @@ label start:
     "Oh no..."
 
     # Face off with Tam. At the end, he disappears. (spruha)
+scene forestbg
+show tam fighting:
+    yalign 0.5 
+    xalign 0.55
+m "If you really have what it takes to win these games, then answer these questions."
+label m_q1:
+    m "Convert 360 kg/K to lb/R. Answer with the correct number of significant digits."
+    menu:
+        "440 lb/R":
+            jump m1_correct
+            
+        "450 lb/R":
+            jump m1_incorrect_1
 
+        "430 lb/R":
+            jump m1_incorrect_2
+
+    label m1_correct:
+        $ menu_flag = True
+        m "It's correct, but don't celebrate so prematurely."
+        jump m_q2
+
+    label m1_incorrect_1:
+        $ menu_flag = False
+        m "Hah! You can't even answer such a simple question?"
+        jump m_q1
+
+    label m1_incorrect_2:
+        $ menu_flag = False
+        m "Hah! You can't even answer such a simple question?"
+        jump m_q1
+
+label m_q2:
+    m "A graph of temperature(K) against pressure(kPa) has has the following plotted points:" 
+    m "(256, 132), (275, 208), and (294, 284). What is the slope of this graph?"
+    menu:
+        "3.9 k/kPa":
+            jump m2_incorrect_1
+
+        "4.0 kPa/K":
+            jump m2_correct
+
+        "4.0 K/kPa":
+            jump m2_incorrect_2
+
+    label m2_incorrect_1:
+        $ menu_flag = False
+        m "I didn't realize it was possible to meet someone this stupid. Try again."
+        jump m_q2
+
+    label m2_incorrect_2:
+        $ menu_flag = False
+        m "I didn't realize it was possible to meet someone this stupid. Try again."
+        jump m_q2
+
+    label m2_correct:
+        $ menu_flag = True
+        m "Urgh! You'll never get this last one!"
+        jump m_q3
+
+label m_q3:
+    m "Mercury has an SG of 13.6. How many pounds of mercury are there in a 300 mL sample?"
+    menu:
+        "8.99 lbm":
+            jump m3_correct
+
+        "7.64 lbm":
+            jump m3_incorrect_1
+
+        "6.87 lbm":
+            jump m3_incorrect_2
+
+    label m3_correct:
+        $ menu_flag = True
+        m "No! No! It's not possible! You couldn't have beat me!"
+        jump m_end
+
+    label m3_incorrect_1:
+        $ menu_flag = False
+        m "I knew you weren't good enough to compete here."
+        jump m_q3
+
+    label m3_incorrect_2:
+        $ menu_flag = False
+        m "I knew you weren't good enough to compete here."
+        jump m_q3
+
+label m_end:
+    m "I suppose I underestimated you."
+    m "But mark my words..."
+    m "You will rue this day."
 
     # We run away, and after like one frame of just getting away, we spot Jamilton, and fight him. (snack)
-
-
+    scene jhforest
+    show jamilton talk:
+        yalign 0.35
+        xalign 0.5
+    "I barely escaped Tam's wrath, running further into a hillier part of the forest. After nearly tripping over a large root, I spotted him. Jordan Hamilton—and he spotted me."
+    h "You really thought you could sneak up on me, huh?"
+    n "What—no, it's not like that!"
+    # fight will happen here
     # After fighting Hamilton, he's like "wait wait wait let's just team up and take down Zino and Aucoin! They're too powerful for either of us to fight them alone. We're better together." (snack)
-
+    
 
     # We approach Zino and Aucoin and Hamilton fights them. Hamilton disappears! (maddy)
 
