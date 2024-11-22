@@ -19,8 +19,8 @@ define t = Character("Tool")
 image stagebg = "stagebg.png"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
-image cornucopiabg:
-    "cornucopiabg.png"
+#image cornucopiabg:
+#   "cornucopiabg.png"
 image forestbg:
     "forestbg.png"
     zoom 4
@@ -30,27 +30,39 @@ image jhforest:
 image justin: 
     "justin.png"
     zoom 2
-image pendar cornucopia = "pendar cornucopia.png"
-image tam cornucopia = "tam cornucopia.png"
+image pendar cornucopia:
+     "pendar cornucopia.png"
+     zoom 0.3
+image tam cornucopia:
+    "tam cornucopia.png"
+    zoom 1.75
 image tam fighting:
     "tam fighting.png"
     zoom 1.75
 image tam tree:
     "tam tree.png"
     zoom 3.5
-image intro = "introscene.jpg"
+image intro:
+    "firstintroscene.png"
+    zoom 0.65
 image marlyn:
     "marlyn.png"
     zoom 0.75
-image aucoin cornucopia = "aucoin cornucopia.png"
+image aucoin cornucopia:
+     "aucoin cornucopia.png"
+     zoom 0.5
 image aucoin zino fight: 
     "aucoin zino fight.png"
     zoom 1.1
-image zino cornucopia = "zino cornucopia.png"
+image zino cornucopia:
+     "zino cornucopia.png"
+     zoom 0.5
 image dean mary wells end = "dean mary wells end.png"
 image kamkar cornucopia = "kamkar cornucopia.png"
 image kamkar intro = "kamkar intro.png"
-image jamilton = "jamilton cornucopia.png"
+image jamilton cornucopia:
+     "jamilton cornucopia.png"
+     zoom 0.5
 image jamilton talk = "jamilton talk.png"
 image bg river:
     "bg river.jpg"
@@ -115,10 +127,10 @@ label start:
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
     scene intro
     show pendar cornucopia:
-        xalign 0.8
-        yalign 0.0
+        xalign -0.1
+        yalign 0.4
     show tam cornucopia:
-        xalign 0.2
+        xalign 0.8
         yalign 0.2
     show aucoin cornucopia:
         xalign 0.3
@@ -127,15 +139,16 @@ label start:
         xalign 0.5
         yalign 0.5
     show zino cornucopia:
-        xalign 0.7
+        xalign 0.2
         yalign 0.3
     show kamkar cornucopia:
-        xalign 0.8
+        xalign 0.6
         yalign 0.2
     #show azevedo cornucopia:
         #xalign 1.0
         #yalign 0.0
-
+    "Wow, there are a lot more tributes than I thought there would be..."
+    "Wait I think I recognize some of these people..."
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
 
