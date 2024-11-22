@@ -300,7 +300,7 @@ label start:
         z "It...it can't be! I lost?! Nooooo!!!!"
         jump z3_done
     else:
-        z "I knew I had you with that question!!"
+        z "I see you can't handle the pressure of that question!!"
         jump z_q3
 
     label z3_done:
