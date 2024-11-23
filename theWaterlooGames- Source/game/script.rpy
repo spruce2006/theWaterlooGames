@@ -433,7 +433,8 @@ label m_end:
 
         label a1_correct:
             $ menu_flag = True
-            a "Wow - i'm impressed." with vpunch
+            play sound "oof.wav"
+            a "Wow - i'm impressed." with vpunch 
             jump a1_done
      
         label a1_incorrect_2:
@@ -462,7 +463,8 @@ label m_end:
 
         label z1_correct:
             $ menu_flag = True
-            z "Well that was a warm up question."
+            play sound "oof.wav"
+            z "Well that was a warm up question." with vpunch
             jump z1_done
      
         label z1_incorrect_2:
@@ -491,7 +493,8 @@ label m_end:
 
         label z2_correct:
             $ menu_flag = True
-            z "You appear to be more of a worthy opponent than I thought."
+            play sound "oof.wav"
+            z "You appear to be more of a worthy opponent than I thought." with vpunch
             jump z2_done
      
         label z2_incorrect_2:
@@ -507,9 +510,9 @@ label m_end:
 
     # Display the result (True or False)
     if is_true:
-        a "yas queen" 
-
-        jump a2_done
+        play sound "oof.wav"
+        a "Wow I'm suprised someone like you would care to know that." with vpunch
+        jump a2_done 
     else:
         a "hmmmm someone doesn't seem to care if their education is accredited"
         jump a_q2
@@ -533,7 +536,8 @@ label m_end:
 
         label a3_correct:
             $ menu_flag = True
-            a "Noooo!!! I've lost to [name] the master soap maker - Zino, destroy them!!!"
+            play sound "oof.wav"
+            a "Noooo!!! I've lost to [name] the master soap maker - Zino, destroy them!!!" with vpunch
             jump a3_done
             
     label a3_done:
@@ -545,14 +549,20 @@ label m_end:
 
     # Display the result (True or False)
     if is_true:
-        z "It...it can't be! I lost?! Nooooo!!!!"
+        play sound "oof.wav"
+        z "It...it can't be! I lost?! Nooooo!!!!" with vpunch
         jump z3_done
     else:
         z "I see you can't handle the pressure of that question!!"
         jump z_q3
 
     label z3_done:
+    define flashbulb = Fade(0.1, 0.0, 0.1, color='#fff')
 
+    hide aucoin zino fight with flashbulb
+
+    show forestbg
+    ""
         # ... the game continues here.
  
 
