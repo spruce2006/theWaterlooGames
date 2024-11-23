@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 466, in script
-    hide aucoin zino fight with flash
-  File "game/script.rpy", line 466, in <module>
-    hide aucoin zino fight with flash
-NameError: name 'flash' is not defined
+  File "game/script.rpy", line 139, in script
+    with dissolve(1.5)
+TypeError: 'Dissolve' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 466, in script
-    hide aucoin zino fight with flash
-  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1357, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\msmad\Downloads\Waterloo Games - Renpy\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 466, in <module>
-    hide aucoin zino fight with flash
-NameError: name 'flash' is not defined
+  File "game/script.rpy", line 139, in script
+    with dissolve(1.5)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1361, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\core.py", line 1578, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\core.py", line 2666, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\core.py", line 2575, in instantiate_transition
+    trans = self.ongoing_transition[layer](
+TypeError: 'Dissolve' object is not callable
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.3.24111502
 theWaterlooGames 1.0
-Sat Nov 23 00:12:58 2024
+Sat Nov 23 01:27:47 2024

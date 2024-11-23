@@ -17,6 +17,7 @@ define d = Character("Dean Mary Wells")
 define t = Character("Tool")
 
 image stagebg = "stagebg.png"
+image waterloo = "waterloobg.jpg"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
 #image cornucopiabg:
@@ -45,7 +46,7 @@ image tam cornucopia:
     zoom 1.23
 image tam cornucopiatwo:
     "tam cornucopia.png"
-    zoom 2
+    zoom 1.6
 image tam fighting:
     "tam fighting.png"
     zoom 1.75
@@ -68,7 +69,7 @@ image aucoin cornucopia:
      zoom 0.3
 image aucoin cornucopiatwo:
      "aucoin cornucopia.png"
-     zoom 0.8
+     zoom 0.7
 image aucoin zino fight: 
     "aucoin zino fight.png"
     zoom 0.7
@@ -79,7 +80,7 @@ image zino cornucopia:
      zoom 0.27
 image zino cornucopiatwo:
      "zino cornucopia.png"
-     zoom 0.8
+     zoom 0.6
 
 
 image dean mary wells end = "dean mary wells end.png"
@@ -87,9 +88,11 @@ image kamkar cornucopia:
      "kamkar cornucopia.png"
      zoom 0.72
 image kamkar cornucopiatwo:
-     "kamkar cornucopia.png"
-     zoom 1
-image kamkar intro = "kamkar intro.png"
+     "kamkar cornucopiatwo.png"
+     zoom 1.2
+image kamkar intro:
+     "kamkar intro.png"
+     zoom 1.1
 
 
 image jamilton cornucopia:
@@ -97,7 +100,7 @@ image jamilton cornucopia:
      zoom 0.31
 image jamilton cornucopiatwo:
      "jamilton cornucopia.png"
-     zoom 0.8
+     zoom 0.5
 
 
 image jamilton talk = "jamilton talk.png"
@@ -133,13 +136,21 @@ image bush:
 
 label start:
     # Blurb about the lore of the Waterloo Games, show title, Kamkar asks for name (cameron)
-
+    play music "entering name music.mp3"
+    scene waterloo
+    show kamkar intro:
+        xalign 0.999
+        yalign -0.9
     python:
         name = renpy.input("What's your name?")
         name = name.strip() or "Player"
     define n = Character("[name]")
+    play sound "i volunteer as tribute.mp3"
     # Justin and Marlyn explain how the games work, and then usher you off the go on the Tool show (maddy)
     scene stagebg   
+    stop music fadeout 1
+    with Dissolve(2)
+
     show justin:
         xalign 0.0 
         yalign 0.4
@@ -165,6 +176,7 @@ label start:
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
     scene intro
+    with pixellate
     show pendar cornucopia:
         xalign 0.0
         yalign 0.7
@@ -186,50 +198,82 @@ label start:
     #show azevedo cornucopia:
         #xalign 1.0
         #yalign 0.0
-    "Wow, there are a lot more tributes than I thought there would be..."
-    "Wait I think I recognize some of these people..."
+    "Wow, I didn't think that there would be so many other tributes to face off against."
+    "Some of them look like really tough opponents."
+    "Hmmm... I think I might recognize some of these people..."
+
 
     scene intro
     show pendar cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    "Hey! Thats Pendar!"
+    with wipeup
+    "{b} Pendar Mahmoudi | District 3 | Technology"
+    "Pendar Mahmoudi is a tech whizz, her computer skills are impeccable. Although she's not from a career district, she's been training and is sneaky like a Python. If you encounter her, don’t try to trick her, you might just end up in an infinite loop of regret."
+    "{i} Strengths: Coding, Debugging, Rubber duck distribution
+    Weaknesses: Syntax Errors, Semantic Errors"
+
 
     scene intro
     show kamkar cornucopiatwo:
         xalign 0.5
-        yalign 0.5
-    "Hey! Thats Kamkar!"
+        yalign 0.85
+    with wipedown
+    "{b} Milad Kamkar | District 4 | Fishing"
+    "Milad Kamkar is here to take names and kick ass. Despite his area of expertise, he’s no nano-challenge. Before you attack, make sure you draw a flow-chart and complete a degree of freedom analysis. Facing off with this opponent will send you into a continuous, steady-state of misery."
+    "{i} Strengths: Material balance, Recycling
+    Weaknesses: When accumulation is not zero."
+
 
     scene intro
     show zino cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    "Hey! Thats Zino!"
+    with wipeup
+    "{b} Zino Ojogbo | District 1 | Luxury"
+    "Zino Ojogbo is a fierce fighter. She’s from a Career district, so she’s been training for the games all her life. When you’re fighting her, make sure you know your chemistry concepts. You don’t want to test her when she’s in her element."
+    "{i} Strengths: Charisma, Combustion analysis
+    Weaknesses: pH over 14"
 
     scene intro
     show aucoin cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    "Hey! Thats Maucoin!"
+    with wipedown
+    "{b} Marc Aucoin | District 2 | Masonry"
+    "Marc Aucoin is a jack of all trades. Whether it's formulating a luxurious soap or harnessing the power of Acylglycerophosphate acyltransferase 4, he’s always got something up his sleeve. Make sure you scrub up on your soap knowledge when facing off Aucoin, or face the PEO misconduct committee."
+    "{i} Strengths: Perry's Chemical Engineering Handbook, Line calculations
+    Weaknesses: Copilot"
 
     scene intro
     show azevedo cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    "Hey! Thats azevedo!"
+    with wipeup
+    "{b} Matheus Azevedo | District 11 | Agriculture"
+    "Matheus Azevedo is sly like a fox. With the power of calculus, he’s honed his mathematics skills and won’t go down without a fight. Hopefully you know your optimization, integration, and trigonometry. Don’t test his limits, or you might end up in the l’Hopital!"
+    "{i} Strengths: Controlling geese, Implicit differentiation
+    Weaknesses: Division by zero"
 
     scene intro
     show jamilton cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    "Hey! Thats jamilton!"
+    with wipedown
+    "{b} Jordan Hamilton | District 8 | Textiles"
+    "Jordan Hamilton is not to be trifled with. Don’t let his friendly demeanor fool you, because everyone here is in it to win it. Make sure to practice your row reducing, vector operations, and never let your guard down!"
+    "{i} Strengths: Taming cats, Calculating determinants
+    Weaknesses: Visualizing R7"
 
     scene intro
     show tam cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    "Hey! Thats tam!"
+    with wipeup
+    "{b} Micheal Tam | District 5 | Power"
+    "Michael Tam is one of the most knowledgeable of the tributes. He’s well known in Waterloo for his grasp on process data analysis, manometers, and density. Be wary while you’re facing off with this tribute, and don’t fold under pressure!"
+    "{i} Strengths: Strengths: Strength of a tank, His handy manometer
+    Weaknesses: Finding mass fraction from mole fraction"
 
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
