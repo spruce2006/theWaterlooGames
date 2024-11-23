@@ -107,6 +107,8 @@ image bg river:
 image sleep:
     "sleep.jpg"
     zoom 4
+image bush:
+    "bush final.png"
 # The game starts here.
 
 #label start:
@@ -359,16 +361,60 @@ label m_end:
     
 
     # We approach Zino and Aucoin and Hamilton fights them. Hamilton disappears! (maddy)
+    scene forestbg 
+    show aucoin zino fight:
+        zoom 0.75
+        yalign 0.5
+        xalign 1.0
+    show bush:
+        zoom 2
+        yalign 1.3
+        xalign 0.8
 
+    show jamilton talk:
+        yalign 0.1
+        xalign -0.5
+        xzoom -1
+        zoom 0.8 
+    z "Oh look - it's another tribute!"
+    a "That's Jordan Hamilton. Don't worry about him, his attack questions can't hurt us - he works in a different dimension."
+    h "oh no"
+    h "I don't know if I can fight 2 tributes at once."
+    scene sleep
+    with Dissolve(0.7)
+    scene forestbg 
     
+    show aucoin zino fight:
+        zoom 0.75
+        yalign 0.5
+        xalign 1.0
+    show bush:
+        zoom 2
+        yalign 1.3
+        xalign 0.8
+   
+    z "Hamilton put up more of a fight than I thought."
+    a "Yeah, I almost lost in our third round - cross products always trip me up."
+    "Oh no! can't believe they got Hamilton!"
+    play sound "leaves.mp3"
+    z "What was that sound?"
+    stop sound 
+    "uh oh I hope they didn't hear me."
+    a "Who's there?!!!"
+
     # Zino and Aucoin approach us and start to fight us. At the end, they disappear. (maddy)
     scene forestbg
     show aucoin zino fight:
         yalign 0.2
         xalign 0.5
-    a "why isn't the water boiling???"
-    z "because of the latent heat of vapourization"
-    a "How many grams of NaOH are required to saponify 500g of Corn oil (SAP value = 137)"
+    a "Well well well"
+    a "why isn't it [name] the mystery tribute."
+    n "you must be Zino Ojobo and Marc Aucoin"
+    z "Good guess"
+    a "Enough chit chat!"
+    a "Are you ready to meet the same fate as your friend Hamilton?"
+    n "We'll see about that!" 
+    a " First question: How many grams of NaOH are required to saponify 500g of Corn oil (SAP value = 137)"
     label a_q1:
         menu:
             '75.4g':
@@ -387,7 +433,7 @@ label m_end:
 
         label a1_correct:
             $ menu_flag = True
-            a "Wow - i'm impressed."
+            a "Wow - i'm impressed." with vpunch
             jump a1_done
      
         label a1_incorrect_2:
@@ -461,7 +507,8 @@ label m_end:
 
     # Display the result (True or False)
     if is_true:
-        a "yas queen"
+        a "yas queen" 
+
         jump a2_done
     else:
         a "hmmmm someone doesn't seem to care if their education is accredited"

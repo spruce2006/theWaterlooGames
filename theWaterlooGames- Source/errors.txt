@@ -2,21 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 175: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "After the long fight with Azevedo, I went to a nearby stream to calm down."
-    ^
-
-File "game/script.rpy", line 179: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    with Dissolve(.5)
-    ^
-
-File "game/script.rpy", line 185: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    with Dissolve(.5)
-    ^
-
-File "game/script.rpy", line 188: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    m "COME DOWN HERE AND FIGHT!"
+File "game/script.rpy", line 276: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    yalign 0.5
     ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Fri Nov 22 16:06:15 2024
+Fri Nov 22 10:10:51 2024
