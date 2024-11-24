@@ -15,6 +15,7 @@ define j = Character("J-Money")
 define y = Character("Marlyn")
 define d = Character("Dean Mary Wells")
 define t = Character("Tool")
+define g = Character("Gamemakers")
 
 image stagebg = "stagebg.png"
 image black:
@@ -27,6 +28,12 @@ image intro = Text("This is a text displayable.", size=30)
 image waterloo = "waterloobg.jpg"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
+image nightbg:
+     "nightbg.jpg"
+     zoom 2
+image fallen:
+     "the fallen.jpg"
+     zoom 1.5
 #image cornucopiabg:
 #   "cornucopiabg.png"
 image forestbg:
@@ -49,26 +56,26 @@ image pendar cornucopiatwo:
 
 
 image tam cornucopia:
-    "tam cornucopia.png"
-    zoom 1.23
+     "tam cornucopia.png"
+     zoom 1.23
 image tam cornucopiatwo:
-    "tam cornucopia.png"
-    zoom 1.6
+     "tam cornucopia.png"
+     zoom 1.6
 image tam fighting:
-    "tam fighting.png"
-    zoom 1.75
+     "tam fighting.png"
+     zoom 1.75
 image tam tree:
-    "tam tree.png"
-    zoom 3.5
+     "tam tree.png"
+     zoom 3.5
 
 
 
 image intro:
-    "firstintroscene.png"
-    zoom 0.65
+     "firstintroscene.png"
+     zoom 0.65
 image marlyn:
-    "marlyn.png"
-    zoom 0.75
+     "marlyn.png"
+     zoom 0.75
 
 
 image aucoin cornucopia:
@@ -635,15 +642,31 @@ label m_end:
         # ... the game continues here.
  
 
-    # Looks into the sky, and there's 22 cannons. Looks like it's just me and Pendar left. The Gamemakers make an announcement that they replenished the Cornucopia. We decide to go, since we're running out of supplies. We go to the Cornucopia. Pendar is behind us and challenges us to a fight. (spruha)
+# Looks into the sky, and there's 22 cannons. Looks like it's just me and Pendar left. The Gamemakers make an announcement that they replenished the Cornucopia. We decide to go, since we're running out of supplies. We go to the Cornucopia. Pendar is behind us and challenges us to a fight. (spruha)
+scene nightbg with Dissolve(.5)
+"By the time the fight with Zino and Aucoin was over, it was already night time."
+"I'm so tired. I can't believe it's only been two days."
+scene the fallen with Dissolve(.5)
+play sound cannon.mp3
+play sound cannon.mp3
+play sound cannon.mp3
+"I heard 22 cannons, I think it's just me and Pendar left now."
+play music anthem.mp3
+"Looks like the Gamemakers have an announcement to make."
+g "What a riveting first day we've had! This might be out fastest game yet!"
+g "A message for the remaining tributes:"
+g "The Cornucopia will be replenished tomorrow morning."
+scene nightbg with Dissolve(.5)
+"Hmmm, I guess I should head there. I don't have much left."
+"Tomorrow morning, I'll go to the Cornucopia."
+stop music fadeout 1
+
+# Pendar fight. She doesn't disappear tho, just fades into the next scene. (spruha)
 
 
-    # Pendar fight. She doesn't disappear tho, just fades into the next scene. (spruha)
+# Dean MW says we won and offers us admission! (cameron)
 
+# This ends the game.
 
-    # Dean MW says we won and offers us admission! (cameron)
-
-    # This ends the game.
-
-    return
+return
 
