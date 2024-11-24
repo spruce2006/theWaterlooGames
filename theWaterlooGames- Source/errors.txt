@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 137: Line is indented, but the preceding play music statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    python:
+File "game/script.rpy", line 173: Line is indented, but the preceding play sound statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    scene waterloo
     ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Sat Nov 23 01:09:47 2024
+Sat Nov 23 22:54:30 2024

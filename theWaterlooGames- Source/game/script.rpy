@@ -17,6 +17,13 @@ define d = Character("Dean Mary Wells")
 define t = Character("Tool")
 
 image stagebg = "stagebg.png"
+image black:
+     "blackscreen.jpg"
+     zoom 4
+image map:
+     "waterloomap.png"
+     zoom 1
+image intro = Text("This is a text displayable.", size=30)
 image waterloo = "waterloobg.jpg"
 image edcombg = "edcombg.png"
 image toolbg = "toolbg.png"
@@ -112,6 +119,10 @@ image sleep:
     zoom 4
 image bush:
     "bush final.png"
+
+define nvle = Character("~", color="#ffffff", kind=nvl)
+ 
+
 # The game starts here.
 
 #label start:
@@ -137,6 +148,18 @@ image bush:
 label start:
     # Blurb about the lore of the Waterloo Games, show title, Kamkar asks for name (cameron)
     play music "entering name music.mp3"
+    scene map:
+        xalign 0.0
+        yalign 0.4
+    nvle "Welcome, students of Waterloo. Welcome to District 12’s reaping of the 29th annual Hunger Games." 
+    nvle "As you may know, disaster struck what used to be Old Waterloo, and what rose from the ashes came the new land of Great Waterloo."
+    nvle "Great Waterloo is the land we all stand on now."
+    nvle "Great Waterloo was a shining capitol ringed by students and professors, each contributing to one specialty in the majority."
+    nvl clear
+    nvle "That is, until the Dark Days. The districts began rebelling against the capitol which obviously resulted into the unfortunate event of a total duel of wit breaking out."
+    nvle "And yet, the capitol predictably took the title of “winner” by taking total destruction seriously and erasing District 13’s civilization forever."
+    nvle "Now, the Waterloo Games was the result of this happening and must go on. In the event of the uprising, each class must offer one student tribute to participate in the Waterloo Games..."
+    nvl clear
     scene waterloo
     show kamkar intro:
         xalign 0.999
@@ -146,15 +169,22 @@ label start:
         name = name.strip() or "Player"
     define n = Character("[name]")
     play sound "i volunteer as tribute.mp3"
+    with Dissolve(1)
+
+    scene waterloo
+    nvle "Well, isn't this a shock..."
+    nvle "There hasn't been a volunteer since the 2024 games 5 years ago"
+    nvle "Good Luck [name], and may the odds be ever in your favor..."
+    stop music fadeout 1
+    with Dissolve(0.5)
+    play sound "may the odds.mp3"
+    with Dissolve(2.5)
+
     # Justin and Marlyn explain how the games work, and then usher you off the go on the Tool show (maddy)
     scene stagebg   
-    stop music fadeout 1
-    with Dissolve(2)
-
     show justin:
         xalign 0.0 
         yalign 0.4
-
     show marlyn:
         xalign 1.0 
         yalign 0.2
@@ -210,8 +240,7 @@ label start:
     with wipeup
     "{b} Pendar Mahmoudi | District 3 | Technology"
     "Pendar Mahmoudi is a tech whizz, her computer skills are impeccable. Although she's not from a career district, she's been training and is sneaky like a Python. If you encounter her, don’t try to trick her, you might just end up in an infinite loop of regret."
-    "{i} Strengths: Coding, Debugging, Rubber duck distribution
-    Weaknesses: Syntax Errors, Semantic Errors"
+    "{i} Strengths: Coding, Debugging, Rubber duck distribution \nWeaknesses: Syntax Errors, Semantic Errors"
 
 
     scene intro
@@ -221,8 +250,7 @@ label start:
     with wipedown
     "{b} Milad Kamkar | District 4 | Fishing"
     "Milad Kamkar is here to take names and kick ass. Despite his area of expertise, he’s no nano-challenge. Before you attack, make sure you draw a flow-chart and complete a degree of freedom analysis. Facing off with this opponent will send you into a continuous, steady-state of misery."
-    "{i} Strengths: Material balance, Recycling
-    Weaknesses: When accumulation is not zero."
+    "{i} Strengths: Material balance, Recycling \nWeaknesses: When accumulation is not zero."
 
 
     scene intro
@@ -232,8 +260,7 @@ label start:
     with wipeup
     "{b} Zino Ojogbo | District 1 | Luxury"
     "Zino Ojogbo is a fierce fighter. She’s from a Career district, so she’s been training for the games all her life. When you’re fighting her, make sure you know your chemistry concepts. You don’t want to test her when she’s in her element."
-    "{i} Strengths: Charisma, Combustion analysis
-    Weaknesses: pH over 14"
+    "{i} Strengths: Charisma, Combustion analysis \nWeaknesses: pH over 14"
 
     scene intro
     show aucoin cornucopiatwo:
@@ -242,8 +269,7 @@ label start:
     with wipedown
     "{b} Marc Aucoin | District 2 | Masonry"
     "Marc Aucoin is a jack of all trades. Whether it's formulating a luxurious soap or harnessing the power of Acylglycerophosphate acyltransferase 4, he’s always got something up his sleeve. Make sure you scrub up on your soap knowledge when facing off Aucoin, or face the PEO misconduct committee."
-    "{i} Strengths: Perry's Chemical Engineering Handbook, Line calculations
-    Weaknesses: Copilot"
+    "{i} Strengths: Perry's Chemical Engineering Handbook, Line calculations \nWeaknesses: Copilot"
 
     scene intro
     show azevedo cornucopiatwo:
@@ -252,8 +278,7 @@ label start:
     with wipeup
     "{b} Matheus Azevedo | District 11 | Agriculture"
     "Matheus Azevedo is sly like a fox. With the power of calculus, he’s honed his mathematics skills and won’t go down without a fight. Hopefully you know your optimization, integration, and trigonometry. Don’t test his limits, or you might end up in the l’Hopital!"
-    "{i} Strengths: Controlling geese, Implicit differentiation
-    Weaknesses: Division by zero"
+    "{i} Strengths: Controlling geese, Implicit differentiation \nWeaknesses: Division by zero"
 
     scene intro
     show jamilton cornucopiatwo:
@@ -262,8 +287,7 @@ label start:
     with wipedown
     "{b} Jordan Hamilton | District 8 | Textiles"
     "Jordan Hamilton is not to be trifled with. Don’t let his friendly demeanor fool you, because everyone here is in it to win it. Make sure to practice your row reducing, vector operations, and never let your guard down!"
-    "{i} Strengths: Taming cats, Calculating determinants
-    Weaknesses: Visualizing R7"
+    "{i} Strengths: Taming cats, Calculating determinants \nWeaknesses: Visualizing R7"
 
     scene intro
     show tam cornucopiatwo:
@@ -272,8 +296,7 @@ label start:
     with wipeup
     "{b} Micheal Tam | District 5 | Power"
     "Michael Tam is one of the most knowledgeable of the tributes. He’s well known in Waterloo for his grasp on process data analysis, manometers, and density. Be wary while you’re facing off with this tribute, and don’t fold under pressure!"
-    "{i} Strengths: Strengths: Strength of a tank, His handy manometer
-    Weaknesses: Finding mass fraction from mole fraction"
+    "{i} Strengths: Strengths: Strength of a tank, His handy manometer \nWeaknesses: Finding mass fraction from mole fraction"
 
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
