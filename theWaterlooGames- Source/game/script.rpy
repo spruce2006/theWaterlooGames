@@ -539,6 +539,11 @@ label m_end:
         label j_q2_wd:
             h "what the sigma"
             jump j_q2
+    label j_q3:
+        python:
+            det_mat_1 = [[2,1,3,4],[0,3,1,2],[0,0,1,3],[0,0,0,4]]
+            det_mat_2 = [[11,12,'3/5',13],[47,11,7,44],[8,-11,8,14],[100,5,-36,'e']]
+        h "Dammit, I won't go down so easily! One more time: given [det_mat_1] and [det_mat_2], find det((AB(A^T)(A^-1)(B^(T)^-1)), if you think you can."
     # fight will happen here
     # After fighting Hamilton, he's like "wait wait wait let's just team up and take down Zino and Aucoin! They're too powerful for either of us to fight them alone. We're better together." (snack)
     
