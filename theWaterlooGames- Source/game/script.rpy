@@ -414,6 +414,8 @@ label m_end:
     m "I suppose I underestimated you."
     m "But mark my words..."
     m "You will rue this day."
+    hide tam fighting with Fade(0.1, 0.0, 0.1, color='#fff')
+    show forestbg
 
     # We run away, and after like one frame of just getting away, we spot Jamilton, and fight him. (snack)
     scene jhforest
@@ -644,6 +646,4 @@ label m_end:
     # This ends the game.
 
     return
-
-
 
