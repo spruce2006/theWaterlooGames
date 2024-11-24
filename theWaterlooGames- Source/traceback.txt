@@ -1,24 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 145, in script
-    nvle "Welcome, students of Waterloo. Welcome to District 12’s reaping of the 29th annual Hunger Games. As you may know, disaster struck what used to be Old Waterloo, and what rose from the ashes came the new land of Great Waterloo. Great Waterloo is the land we all stand on now. Great Waterloo was a shining capitol ringed by students (from district twelve) and professors from districts (one to eleven), each contributing to one specialty in the majority. That is, until the Dark Days. The districts began rebelling against the capitol which obviously resulted into the unfortunate event of a total duel of wit breaking out. And yet, the capitol predictably took the title of “winner” by taking total destruction seriously and erasing District 13’s civilization forever. Now, the Waterloo Games was the result of this happening and must go on. In the event of the uprising, each class must offer one student tribute to participate in the Waterloo Games..."
-Exception: Sayer 'nvle' is not defined.
+  File "game/script.rpy", line 650, in script
+    play sound cannon.mp3
+  File "renpy/common/000statements.rpy", line 301, in execute_play_sound
+    renpy.sound.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "game/script.rpy", line 650, in <module>
+    play sound cannon.mp3
+AttributeError: 'str' object has no attribute 'mp3'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 145, in script
-    nvle "Welcome, students of Waterloo. Welcome to District 12’s reaping of the 29th annual Hunger Games. As you may know, disaster struck what used to be Old Waterloo, and what rose from the ashes came the new land of Great Waterloo. Great Waterloo is the land we all stand on now. Great Waterloo was a shining capitol ringed by students (from district twelve) and professors from districts (one to eleven), each contributing to one specialty in the majority. That is, until the Dark Days. The districts began rebelling against the capitol which obviously resulted into the unfortunate event of a total duel of wit breaking out. And yet, the capitol predictably took the title of “winner” by taking total destruction seriously and erasing District 13’s civilization forever. Now, the Waterloo Games was the result of this happening and must go on. In the event of the uprising, each class must offer one student tribute to participate in the Waterloo Games..."
-  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
-    Say.execute(self)
-  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'nvle' is not defined.
+  File "game/script.rpy", line 650, in script
+    play sound cannon.mp3
+  File "/Users/spruha/code/renpy-8.3.3-sdk/renpy/ast.py", line 1974, in execute
+    self.call("execute")
+  File "/Users/spruha/code/renpy-8.3.3-sdk/renpy/ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "/Users/spruha/code/renpy-8.3.3-sdk/renpy/statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 301, in execute_play_sound
+    renpy.sound.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "/Users/spruha/code/renpy-8.3.3-sdk/renpy/python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Users/spruha/code/renpy-8.3.3-sdk/renpy/python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 650, in <module>
+    play sound cannon.mp3
+AttributeError: 'str' object has no attribute 'mp3'
 
-Windows-10-10.0.22631 AMD64
+macOS-14.6.1-arm64-arm-64bit arm64
 Ren'Py 8.3.3.24111502
 theWaterlooGames 1.0
-Sat Nov 23 20:30:18 2024
+Sun Nov 24 00:06:59 2024
