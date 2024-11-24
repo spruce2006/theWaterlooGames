@@ -58,7 +58,11 @@ macOS-14.6.1-arm64-arm-64bit arm64
 Ren'Py 8.3.3.24111502
 theWaterlooGames 1.0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Sun Nov 24 00:06:59 2024
 =======
 Sun Nov 24 00:15:37 2024
+>>>>>>> Stashed changes
+=======
+Sun Nov 24 00:10:26 2024
 >>>>>>> Stashed changes

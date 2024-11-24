@@ -34,10 +34,10 @@ image toolbg:
      zoom 2
 image nightbg:
      "nightbg.jpg"
-     zoom 2
+     zoom 3
 image fallen:
      "the fallen.jpg"
-     zoom 1.5
+     zoom 10
 #image cornucopiabg:
 #   "cornucopiabg.png"
 image forestbg:
@@ -59,6 +59,12 @@ image pendar cornucopia:
 image pendar cornucopiatwo:
      "pendar cornucopia.png"
      zoom 0.6
+image pendar fighting:
+     "pendar fighting.png"
+     zoom 3
+image p q3:
+     "p q3.png"
+     zoom 2
 
 
 image tam cornucopia:
@@ -717,22 +723,111 @@ scene nightbg with Dissolve(.5)
 "By the time the fight with Zino and Aucoin was over, it was already night time."
 "I'm so tired. I can't believe it's only been two days."
 scene the fallen with Dissolve(.5)
-play sound cannon.mp3
-play sound cannon.mp3
-play sound cannon.mp3
+play sound "cannon.mp3"
+play sound "cannon.mp3"
+play sound "cannon.mp3"
 "I heard 22 cannons, I think it's just me and Pendar left now."
-play music anthem.mp3
+play music "anthem.mp3"
 "Looks like the Gamemakers have an announcement to make."
-g "What a riveting first day we've had! This might be out fastest game yet!"
+g "What a riveting first day we've had! This might be our fastest game yet!"
 g "A message for the remaining tributes:"
 g "The Cornucopia will be replenished tomorrow morning."
 scene nightbg with Dissolve(.5)
 "Hmmm, I guess I should head there. I don't have much left."
 "Tomorrow morning, I'll go to the Cornucopia."
 stop music fadeout 1
-
+scene intro with Fade(0.5, 0.5, 0.5)
+"Okay, I just need to get some supplies and quickly leave."
+p "Funny seeing you here"
+"She's right behind me, isn't she..."
 # Pendar fight. She doesn't disappear tho, just fades into the next scene. (spruha)
+show pendar fighting:
+     xalign 0.5
+     yalign 0.0
+p "Look kid, I don't take any pleasure in fighting you."
+n "Then why are you doing this?!"
+n "It's my first time here. I have no idea what I'm doing. I don't want to be eliminated."
+p "I know, but I can't afford to get eliminated either."
+p "So let's see if you have what it takes."
 
+label p_q1:
+     p "Where does the caption on a figure go?"
+     menu:
+        "Beside it":
+            jump p1_incorrect1
+                
+        "Above it":
+            jump p1_incorrect_2
+
+        "Below it":
+            jump p1_correct
+
+label p1_correct:
+     $ menu_flag = True
+     p "Hm. You might make a worthy opponent after all."
+     jump p_q2
+
+label p1_incorrect_1:
+     $ menu_flag = False
+     p "That answer is nonsense."
+     jump p_q1
+
+label p1_incorrect_2:
+     $ menu_flag = False
+     p "[name], you silly little tribute."
+     jump p_q1
+
+label p_q2:
+     p "What is the value of p2 as it is defined:" 
+     p "p2 = ((True and False) and (True or True)) or ((False or True) and (True or False))"
+     menu:
+        "False":
+            jump p2_incorrect
+
+        "True":
+            jump p2_correct
+
+label p2_incorrect:
+     $ menu_flag = False
+     p "Someone doesn't know how booleans work..."
+     jump p_q2
+
+label p2_correct:
+     $ menu_flag = True
+     p "Well you had a fifty-fifty chance, so it's not that big of a deal..."
+     jump p_q3
+
+label p_q3:
+     show p q3:
+        xalign 0.0
+        yalign 1.0
+     p "Which of the following evaluates this function using python?"
+     menu:
+        "(40*(x**3) + 13*(x**2) -5*x + 17)*42*(x**4))/(((48*x + 56)**0.5) - (12*(x**(3/2))))":
+            jump p3_correct
+
+        "(40*(x^3) + 13*(^2) -5*x + 17)*42*(x^4))/(((48*x + 56)^0.5) - (12(x^(3/2))))":
+            jump p3_incorrect_1
+
+        "(40x**3 + 13x**2 -5x + 17)*42x**4))/(((48x + 56)**0.5) - (12(x**(3/2))))":
+            jump p3_incorrect_2
+
+label p3_correct:
+     $ menu_flag = True
+     jump p_end
+
+label p3_incorrect_1:
+     $ menu_flag = False
+     p "You tried, and that's what counts.."
+     jump p_q3
+
+label p3_incorrect_2:
+     $ menu_flag = False
+     p "You tried, and that's what counts.."
+     jump p_q3
+
+label p_end:
+     hide pendar fighting with Fade(0.1, 0.0, 0.1, color='#fff')
 
 # Dean MW says we won and offers us admission! (cameron)
 
