@@ -2,28 +2,7 @@
 errors listed below, and try again.
 
 
-<<<<<<< Updated upstream
-File "game/script.rpy", line 32: expected statement.
-    <<<<<<< Updated upstream
-                            ^
-
-File "game/script.rpy", line 40: expected statement.
-    =======
-          ^
-
-File "game/script.rpy", line 44: expected statement.
-    >>>>>>> Stashed changes
-                           ^
+File "game/script.rpy", line 516: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Sun Nov 24 00:25:14 2024
-=======
-The label m3_incorrect_2 is defined twice, at File "game/script.rpy", line 420:
-    label m3_incorrect_2:
-and File "game/script.rpy", line 753:
-label m3_incorrect_2:
-
-
-Ren'Py Version: Ren'Py 8.3.3.24111502
-Sun Nov 24 00:58:09 2024
->>>>>>> Stashed changes
+Sun Nov 24 16:54:50 2024

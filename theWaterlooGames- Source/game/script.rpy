@@ -170,13 +170,13 @@ label start:
     scene map:
         xalign 0.0
         yalign 0.4
-    nvle "Welcome, students of Waterloo. Welcome to District 12’s reaping of the 29th annual Hunger Games." 
+    nvle "Welcome, students of Waterloo. Welcome to District 12's reaping of the 29th annual Hunger Games." 
     nvle "As you may know, disaster struck what used to be Old Waterloo, and what rose from the ashes came the new land of Great Waterloo."
     nvle "Great Waterloo is the land we all stand on now."
     nvle "Great Waterloo was a shining capitol ringed by students and professors, each contributing to one specialty in the majority."
     nvl clear
     nvle "That is, until the Dark Days. The districts began rebelling against the capitol which obviously resulted into the unfortunate event of a total duel of wit breaking out."
-    nvle "And yet, the capitol predictably took the title of “winner” by taking total destruction seriously and erasing District 13’s civilization forever."
+    nvle "And yet, the capitol predictably took the title of “winner” by taking total destruction seriously and erasing District 13's civilization forever."
     nvle "Now, the Waterloo Games was the result of this happening and must go on. In the event of the uprising, each class must offer one student tribute to participate in the Waterloo Games..."
     nvl clear
     scene waterloo
@@ -508,6 +508,14 @@ label m_end:
     "I barely escaped Tam's wrath, running further into a hillier part of the forest. After nearly tripping over a large root, I spotted him. Jordan Hamilton—and he spotted me."
     h "You really thought you could sneak up on me, huh?"
     n "What—no, it's not like that!"
+    h "You're not fooling me that easily! Come here and fight!"
+   
+    python:
+        matrix_A = [[1],[2],[3]]
+        matrix_B = [[-1],[1],[2]]
+    h "Fine, let's make this tougher. What's the projection of B onto A? A is [matrix_A], and B is [matrix_B]"
+    #label j_q2:
+     #   menu:
     # fight will happen here
     # After fighting Hamilton, he's like "wait wait wait let's just team up and take down Zino and Aucoin! They're too powerful for either of us to fight them alone. We're better together." (snack)
     
