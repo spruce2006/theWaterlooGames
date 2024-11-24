@@ -509,13 +509,36 @@ label m_end:
     h "You really thought you could sneak up on me, huh?"
     n "What—no, it's not like that!"
     h "You're not fooling me that easily! Come here and fight!"
-   
-    python:
-        matrix_A = [[1],[2],[3]]
-        matrix_B = [[-1],[1],[2]]
-    h "Fine, let's make this tougher. What's the projection of B onto A? A is [matrix_A], and B is [matrix_B]"
-    #label j_q2:
-     #   menu:
+    label j_q2:
+        python:
+            matrix_A = [[1],[2],[3]]
+            matrix_B = [[-1],[1],[2]]
+            correct_proj = [['-7/6'],['7/6'],['7/3']]
+            wrong_b = [['13/6'],['5/6'],['2/3']]
+            wrong_c = [[0],[3],[5]]
+            wrong_d = [[1,-1],[2,1],[3,2]]
+        h "Fine, let's make this tougher. What's the projection of B onto A? A is [matrix_A], and B is [matrix_B]."
+        menu:
+            "[correct_proj]":
+                jump j_q2_correct
+            "[wrong_b]":
+                jump j_q2_wb
+            "[wrong_c]":
+                jump j_q2_wc
+            "[wrong_d]":
+                jump j_q2_wd
+        label j_q2_correct:
+            h "Alright, so you're not trivial."
+            jump j_q3
+        label j_q2_wb:
+            h "ermmmm"
+            jump j_q2
+        label j_q2_wc:
+            h "bro.... that's not..."
+            jump j_q2
+        label j_q2_wd:
+            h "what the sigma"
+            jump j_q2
     # fight will happen here
     # After fighting Hamilton, he's like "wait wait wait let's just team up and take down Zino and Aucoin! They're too powerful for either of us to fight them alone. We're better together." (snack)
     
