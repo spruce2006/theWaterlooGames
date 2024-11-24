@@ -29,19 +29,15 @@ image map:
 image intro = Text("This is a text displayable.", size=30)
 image waterloo = "waterloobg.jpg"
 image edcombg = "edcombg.png"
-<<<<<<< Updated upstream
-image toolbg = "toolbg.png"
+image toolbg:
+     "toolbg.png"
+     zoom 2
 image nightbg:
      "nightbg.jpg"
      zoom 2
 image fallen:
      "the fallen.jpg"
      zoom 1.5
-=======
-image toolbg:
-    "toolbg.png"
-    zoom 2
->>>>>>> Stashed changes
 #image cornucopiabg:
 #   "cornucopiabg.png"
 image forestbg:
