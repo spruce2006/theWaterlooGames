@@ -1,6 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
+<<<<<<< Updated upstream
   File "game/script.rpy", line 650, in script
     play sound cannon.mp3
   File "renpy/common/000statements.rpy", line 301, in execute_play_sound
@@ -10,10 +11,18 @@ While running game code:
   File "game/script.rpy", line 650, in <module>
     play sound cannon.mp3
 AttributeError: 'str' object has no attribute 'mp3'
+=======
+  File "game/script.rpy", line 220, in script
+    python:
+  File "game/script.rpy", line 223, in <module>
+    renpy.define("x", f"Program({prog})")
+AttributeError: module 'renpy.exports' has no attribute 'define'
+>>>>>>> Stashed changes
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< Updated upstream
   File "game/script.rpy", line 650, in script
     play sound cannon.mp3
   File "/Users/spruha/code/renpy-8.3.3-sdk/renpy/ast.py", line 1974, in execute
@@ -33,8 +42,23 @@ Full traceback:
   File "game/script.rpy", line 650, in <module>
     play sound cannon.mp3
 AttributeError: 'str' object has no attribute 'mp3'
+=======
+  File "game/script.rpy", line 220, in script
+    python:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 223, in <module>
+    renpy.define("x", f"Program({prog})")
+AttributeError: module 'renpy.exports' has no attribute 'define'
+>>>>>>> Stashed changes
 
 macOS-14.6.1-arm64-arm-64bit arm64
 Ren'Py 8.3.3.24111502
 theWaterlooGames 1.0
+<<<<<<< Updated upstream
 Sun Nov 24 00:06:59 2024
+=======
+Sun Nov 24 00:15:37 2024
+>>>>>>> Stashed changes

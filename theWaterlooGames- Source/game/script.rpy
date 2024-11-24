@@ -17,7 +17,9 @@ define d = Character("Dean Mary Wells")
 define t = Character("Tool")
 define g = Character("Gamemakers")
 
-image stagebg = "stagebg.png"
+image stagebg:
+     "stagebg.png"
+     zoom 1.5
 image black:
      "blackscreen.jpg"
      zoom 4
@@ -27,6 +29,7 @@ image map:
 image intro = Text("This is a text displayable.", size=30)
 image waterloo = "waterloobg.jpg"
 image edcombg = "edcombg.png"
+<<<<<<< Updated upstream
 image toolbg = "toolbg.png"
 image nightbg:
      "nightbg.jpg"
@@ -34,6 +37,11 @@ image nightbg:
 image fallen:
      "the fallen.jpg"
      zoom 1.5
+=======
+image toolbg:
+    "toolbg.png"
+    zoom 2
+>>>>>>> Stashed changes
 #image cornucopiabg:
 #   "cornucopiabg.png"
 image forestbg:
@@ -45,7 +53,9 @@ image jhforest:
 image justin: 
     "justin.png"
     zoom 2
-
+image tool:
+    "toolpose.png"
+    zoom 0.75
 
 image pendar cornucopia:
      "pendar cornucopia.png"
@@ -182,6 +192,7 @@ label start:
     nvle "Well, isn't this a shock..."
     nvle "There hasn't been a volunteer since the 2024 games 5 years ago"
     nvle "Good Luck [name], and may the odds be ever in your favor..."
+    nvl clear
     stop music fadeout 1
     with Dissolve(0.5)
     play sound "may the odds.mp3"
@@ -209,6 +220,62 @@ label start:
     with Dissolve(.5)
 
     # The Tool asks you a bunch of questions; just interactive not for points (snack)
+    scene toolbg
+    show tool
+    t "Welcome to the Tool show! With your beloved host, Tool, me!"
+    t "Today we have a very special guest joining us, please welcome [name]!"
+    play sound "toolclap.mp3"
+    with Dissolve(1)
+
+    t "So why don't you tell us a bit about yourself?"
+    python:
+        prog = renpy.input("What program are you in?")
+        prog = prog.strip() or "None"
+
+    t "Wow... in [prog], quite impressive don't you think?"
+    n "Well, it's definetly tough but so am I, that's why I have no doubt that I can win this years Waterloo Games..."
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
@@ -241,66 +308,73 @@ label start:
 
 
     scene intro
+    with wipeup
     show pendar cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    with wipeup
+    with zoomin
     "{b} Pendar Mahmoudi | District 3 | Technology"
     "Pendar Mahmoudi is a tech whizz, her computer skills are impeccable. Although she's not from a career district, she's been training and is sneaky like a Python. If you encounter her, don’t try to trick her, you might just end up in an infinite loop of regret."
     "{i} Strengths: Coding, Debugging, Rubber duck distribution \nWeaknesses: Syntax Errors, Semantic Errors"
 
 
     scene intro
+    with wipedown
     show kamkar cornucopiatwo:
         xalign 0.5
         yalign 0.85
-    with wipedown
+    with zoomin
     "{b} Milad Kamkar | District 4 | Fishing"
     "Milad Kamkar is here to take names and kick ass. Despite his area of expertise, he’s no nano-challenge. Before you attack, make sure you draw a flow-chart and complete a degree of freedom analysis. Facing off with this opponent will send you into a continuous, steady-state of misery."
     "{i} Strengths: Material balance, Recycling \nWeaknesses: When accumulation is not zero."
 
 
     scene intro
+    with wipeup
     show zino cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    with wipeup
+    with zoomin
     "{b} Zino Ojogbo | District 1 | Luxury"
     "Zino Ojogbo is a fierce fighter. She’s from a Career district, so she’s been training for the games all her life. When you’re fighting her, make sure you know your chemistry concepts. You don’t want to test her when she’s in her element."
     "{i} Strengths: Charisma, Combustion analysis \nWeaknesses: pH over 14"
 
     scene intro
+    with wipedown
     show aucoin cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    with wipedown
+    with zoomin
     "{b} Marc Aucoin | District 2 | Masonry"
     "Marc Aucoin is a jack of all trades. Whether it's formulating a luxurious soap or harnessing the power of Acylglycerophosphate acyltransferase 4, he’s always got something up his sleeve. Make sure you scrub up on your soap knowledge when facing off Aucoin, or face the PEO misconduct committee."
     "{i} Strengths: Perry's Chemical Engineering Handbook, Line calculations \nWeaknesses: Copilot"
 
     scene intro
+    with wipeup
     show azevedo cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    with wipeup
+    with zoomin
     "{b} Matheus Azevedo | District 11 | Agriculture"
     "Matheus Azevedo is sly like a fox. With the power of calculus, he’s honed his mathematics skills and won’t go down without a fight. Hopefully you know your optimization, integration, and trigonometry. Don’t test his limits, or you might end up in the l’Hopital!"
     "{i} Strengths: Controlling geese, Implicit differentiation \nWeaknesses: Division by zero"
 
     scene intro
+    with wipedown
     show jamilton cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    with wipedown
+    with zoomin
     "{b} Jordan Hamilton | District 8 | Textiles"
     "Jordan Hamilton is not to be trifled with. Don’t let his friendly demeanor fool you, because everyone here is in it to win it. Make sure to practice your row reducing, vector operations, and never let your guard down!"
     "{i} Strengths: Taming cats, Calculating determinants \nWeaknesses: Visualizing R7"
 
     scene intro
+    with wipeup
     show tam cornucopiatwo:
         xalign 0.5
         yalign 0.5
-    with wipeup
+    with zoomin
     "{b} Micheal Tam | District 5 | Power"
     "Michael Tam is one of the most knowledgeable of the tributes. He’s well known in Waterloo for his grasp on process data analysis, manometers, and density. Be wary while you’re facing off with this tribute, and don’t fold under pressure!"
     "{i} Strengths: Strengths: Strength of a tank, His handy manometer \nWeaknesses: Finding mass fraction from mole fraction"
