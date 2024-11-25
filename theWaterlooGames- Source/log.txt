@@ -1,37 +1,540 @@
-2024-11-25 15:18:44 UTC
+2024-11-25 18:55:25 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.3.24111502
 
 Early init took 0.11s
-Loading error handling took 0.05s
-Loading script took 0.28s
+Loading error handling took 0.03s
+Loading script took 0.24s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 301: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    menu:
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 1.68s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 25.40s
+Loading error handling took 0.04s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 301: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    menu:
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.46s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 26.59s
+Loading error handling took 0.04s
+Loading script took 0.19s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 301: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    menu:
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.47s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 28.22s
+Loading error handling took 0.04s
+Loading script took 0.20s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 301: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    menu:
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.49s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 49.54s
+Loading error handling took 0.03s
+Loading script took 0.24s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 Running init code took 0.06s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\camer\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.43s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 301, in script
+    menu:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1619, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 99, in menu
+    label = substitute(label)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 62, in substitute
+    return s % renpy.exports.tag_quoting_dict
+TypeError: must be real number, not TagQuotingDict
+
+While running game code:
+  File "game/script.rpy", line 301, in script
+    menu:
+TypeError: must be real number, not TagQuotingDict
+Resetting cache.
+Early init took 106.53s
+Loading error handling took 0.03s
+Loading script took 0.25s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\camer\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.42s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 300, in script
+    menu:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1619, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 99, in menu
+    label = substitute(label)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 62, in substitute
+    return s % renpy.exports.tag_quoting_dict
+TypeError: must be real number, not TagQuotingDict
+
+While running game code:
+  File "game/script.rpy", line 300, in script
+    menu:
+TypeError: must be real number, not TagQuotingDict
+Resetting cache.
+Early init took 532.51s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\camer\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.47s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 300, in script
+    menu:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1619, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 99, in menu
+    label = substitute(label)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 62, in substitute
+    return s % renpy.exports.tag_quoting_dict
+TypeError: must be real number, not TagQuotingDict
+
+While running game code:
+  File "game/script.rpy", line 300, in script
+    menu:
+TypeError: must be real number, not TagQuotingDict
+Resetting cache.
+Early init took 671.30s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.44s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 300, in script
+    menu:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1619, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 99, in menu
+    label = substitute(label)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 62, in substitute
+    return s % renpy.exports.tag_quoting_dict
+TypeError: must be real number, not TagQuotingDict
+
+While running game code:
+  File "game/script.rpy", line 300, in script
+    menu:
+TypeError: must be real number, not TagQuotingDict
+Resetting cache.
+Early init took 715.66s
+Loading error handling took 0.03s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.46s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 300, in script
+    menu:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1619, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 99, in menu
+    label = substitute(label)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 62, in substitute
+    return s % renpy.exports.tag_quoting_dict
+TypeError: must be real number, not TagQuotingDict
+
+While running game code:
+  File "game/script.rpy", line 300, in script
+    menu:
+TypeError: must be real number, not TagQuotingDict
+Resetting cache.
+Early init took 773.11s
+Loading error handling took 0.03s
+Loading script took 0.14s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.46s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 300, in script
+    menu:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1619, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 99, in menu
+    label = substitute(label)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 62, in substitute
+    return s % renpy.exports.tag_quoting_dict
+TypeError: must be real number, not TagQuotingDict
+
+While running game code:
+  File "game/script.rpy", line 300, in script
+    menu:
+TypeError: must be real number, not TagQuotingDict
+Resetting cache.
+Early init took 973.95s
+Loading error handling took 0.03s
+Loading script took 0.24s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\camer\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
 Dump and make backups took 0.08s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.03s
+Initial gc took 0.07s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.46s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5334'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1620) drawable=(2880, 1620)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 300, in script
+    menu:
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1619, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 99, in menu
+    label = substitute(label)
+  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 62, in substitute
+    return s % renpy.exports.tag_quoting_dict
+TypeError: must be real number, not TagQuotingDict
+
+While running game code:
+  File "game/script.rpy", line 300, in script
+    menu:
+TypeError: must be real number, not TagQuotingDict
+Resetting cache.
+Early init took 1061.93s
+Loading error handling took 0.03s
+Loading script took 0.25s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\camer\\AppData\\Roaming/RenPy/backups\\theWaterlooGames- Source':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
 Save screen analysis took 0.03s
 Prepare screens took 0.07s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 1.21s
+Interface start took 0.42s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2880, 1800)

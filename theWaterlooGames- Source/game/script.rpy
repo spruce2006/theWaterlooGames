@@ -261,17 +261,14 @@ label start:
     label yars3:
         $ menu_flag = True
         t "Well then, you better hope someone is willing to team up with you, or else you may find yourself in quite the predicament..."
-            play sound "laugh.mp3"
-
-
-
+        play sound "laugh.mp3"
 
     t "So then [name], do you have a specific strategy for this years game? Or are you just winging it?"
 
     label m_qt2:
      "What can I say so that the other tributes don't think im an easy opponent?"
     menu:
-        "Well I haven't really though about it, probably just try me best.... {b} Unsure Answer":
+        "Well I haven't really though about it, probably just try my best... {b} Unsure Answer":
             jump yup1
             
         "I've been studying and training for a long time, I am super smart and am sure that I can tackle any question that comes my way. {b} Confident Answer":
@@ -284,17 +281,47 @@ label start:
     label yup1:
         $ menu_flag = True
         t "Clearly someone has never been in an interview before..."
-            play sound "laugh.mp3"
+        play sound "laugh.mp3"
     label yup2:
         $ menu_flag = True
         t "Hopefully you can prove that when the games start but, so far I see more brawns then brains..."
-            play sound "laugh.mp3"
+        play sound "laugh.mp3"
     label yup3:
         $ menu_flag = True
-        t "I know that right, it's so nice to finally have someone with some personality on stage with me..."
+        t "I know thats right, it's so nice to finally have someone with some personality on stage with me..."
+
+        t "Ok [name] I just have one more question for you, one that everyone is wondering, then you are free to enter the Waterloo Games."
+        t "If you win the Waterloo Games, what do you plan on doing?"
 
 
 
+#    label m_qt3:
+#        "How should I answer this so that people stay interested in me after the games?"
+#        menu:
+#            "I have a family back home and I really miss them. I love and miss them so much, hopefully I get to see them soon enough... {b} Personal Answer":
+#                jump yuh1
+#                
+#            "If I win the games I am 100% going to party it up with all my friends and have an amazing time in the spotlight...{b} Proud Answer":
+#                jump yuh2
+#
+#            "Well I miss my home town, so I will probably be out and about. If you see me around feel free to ask for a picture... {b} Publicity Answer":
+#                play sound "laugh.mp3"
+#                jump yuh3
+#    
+#    label yuh1:
+#        $ menu_flag = True
+#        t "Well isn't that sweet, hopefully you are able to do that... If not I might feel a little sad for you... Maybe..."
+#        play sound "laugh.mp3"
+#    label yuh2:
+#        $ menu_flag = True
+#        t "Somebody wants to seem cool, and some people may see it, but I dont..."
+#        play sound "laugh.mp3"
+#    label yuh3:
+#        $ menu_flag = True
+#        t "Someone knows how to work an audience! \n Me! Tool! ..."
+#
+#        t "Thank you for being here today [name], good luck in the games today!"
+#        t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
 
 
 
