@@ -1,30 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 139, in script
-    with dissolve(1.5)
-TypeError: 'Dissolve' object is not callable
+  File "game/script.rpy", line 532, in script
+    jump j_q3
+ScriptError: could not find label 'j_q3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 139, in script
-    with dissolve(1.5)
-  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\ast.py", line 1361, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\core.py", line 1578, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\core.py", line 2666, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "C:\Users\camer\OneDrive\Desktop\code\renpy-8.3.3-sdk\renpy\display\core.py", line 2575, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-TypeError: 'Dissolve' object is not callable
+  File "game/script.rpy", line 532, in script
+    jump j_q3
+  File "C:\Users\tooki\OneDrive - University of Waterloo\CHE 120\The Waterloo Games\renpy-8.3.3-sdk\renpy\ast.py", line 1699, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\tooki\OneDrive - University of Waterloo\CHE 120\The Waterloo Games\renpy-8.3.3-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'j_q3'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.3.24111502
 theWaterlooGames 1.0
-Sat Nov 23 01:27:47 2024
+Sun Nov 24 17:16:29 2024
