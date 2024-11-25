@@ -236,6 +236,19 @@ label start:
 
     t "Wow... in [prog], quite impressive don't you think?"
     n "Well, it's definetly tough but so am I, that's why I have no doubt that I can win this years Waterloo Games..."
+    t "Well then... isn't somebody confident..."
+    t "So, you're not worried that there may be some tougher opponents?"
+    label m_qt1:
+    m "How would I respond so that the viewers like me more?"
+    menu:
+        "{b} Bold Answer":
+            jump m1_correct_1
+            
+        "{b} Safe Answer":
+            jump m1_correct_2
+
+        "{b} ":
+            jump m1_correct_3
     
 
 
