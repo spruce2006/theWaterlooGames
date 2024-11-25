@@ -261,7 +261,7 @@ label start:
     label yars3:
         $ menu_flag = True
         t "Well then, you better hope someone is willing to team up with you, or else you may find yourself in quite the predicament..."
-
+            play sound "laugh.mp3"
 
 
 
@@ -278,17 +278,17 @@ label start:
             jump yup2
 
         "Well as long as nobody asks me about Matricies I should be good... I'm talking to you Jordan hamilton. {b} Comedic Answer ":
-            #insert laugh track sound
+            play sound "laugh.mp3"
             jump yup3
     
     label yup1:
         $ menu_flag = True
         t "Clearly someone has never been in an interview before..."
-        #insert laugh track sound
+            play sound "laugh.mp3"
     label yup2:
         $ menu_flag = True
         t "Hopefully you can prove that when the games start but, so far I see more brawns then brains..."
-        #insert laugh track sound
+            play sound "laugh.mp3"
     label yup3:
         $ menu_flag = True
         t "I know that right, it's so nice to finally have someone with some personality on stage with me..."
