@@ -2,7 +2,29 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 516: Indentation mismatch.
+The label m_qt2 is defined twice, at File "game/script.rpy", line 268:
+    label m_qt2:
+and File "game/script.rpy", line 296:
+    label m_qt2:
+
+
+The label yup1 is defined twice, at File "game/script.rpy", line 281:
+    label yup1:
+and File "game/script.rpy", line 309:
+    label yup1:
+
+
+The label yup2 is defined twice, at File "game/script.rpy", line 285:
+    label yup2:
+and File "game/script.rpy", line 313:
+    label yup2:
+
+
+The label yup3 is defined twice, at File "game/script.rpy", line 289:
+    label yup3:
+and File "game/script.rpy", line 317:
+    label yup3:
+
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Sun Nov 24 16:54:50 2024
+Mon Nov 25 16:02:13 2024
