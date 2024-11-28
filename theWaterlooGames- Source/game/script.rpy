@@ -623,15 +623,14 @@ label m_end:
             det_mat_1 = [[2,1,3,4],[0,3,1,2],[0,0,1,3],[0,0,0,4]]
             det_mat_2 = [[11,12,'3/5',13],[47,11,7,44],[8,-11,8,14],[100,5,-36,'e']]
         h "Dammit, I won't go down so easily! One more time: given [det_mat_1] and [det_mat_2], find det((AB(A^T)(A^-1)(B^(T)^-1)), if you think you can."
-        python: 
-            answer = renpy.input('det = ')
-            answer = answer.strip()
-        if answer == 24:
-            h "Wow—you're pretty determined."
-            jump j_q_end
-        else:
-            h "L bozo"
-            jump j_q_end
+        $ ans_aq2 = renpy.input("det = ")
+        $ is_true = (ans_aq2.strip() == "24")
+    if is_true:
+        h "Wow, you're pretty determined..."
+        jump j_q_end
+    else:
+        a "L bozo"
+        jump j_q3
     label j_q_end:
         h "Wait—Wait! It's clear to me that you're plenty capable—but hear me out a minute!"
         "His tone changed so suddenly…maybe I should give him a chance."
@@ -798,7 +797,7 @@ label m_end:
         a "Wow I'm suprised someone like you would care to know that." with vpunch
         jump a2_done 
     else:
-        a "hmmmm someone doesn't seem to care if their education is accredited"
+        a "hmmmm, someone doesn't seem to care if their education is accredited"
         jump a_q2
 
     label a2_done:
