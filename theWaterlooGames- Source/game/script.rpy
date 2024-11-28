@@ -610,7 +610,7 @@ label m_end:
             jump j_q1
         label j_q1_correct:
             h "I'd be impressed if these operations weren't so elementary."
-            jump j_q1_end
+            jump j_q2
         label j_q1_wB:
             h "I did say 'reduce,' didn't I?"
             jump j_q1
