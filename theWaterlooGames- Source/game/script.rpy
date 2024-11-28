@@ -588,6 +588,35 @@ label m_end:
     h "You really thought you could sneak up on me, huh?"
     n "What—no, it's not like that!"
     h "You're not fooling me that easily! Come here and fight!"
+    label j_q1:
+        python: 
+            matrix_UR = [[2,1,9],[0,1,2],[1,0,3]]
+            matrix_REF = [[1,0,3],[0,1,2],[0,0,1]]
+            matrix_wA = [[1,0,0],[0,1,0],[0,0,1]]
+            matrix_wB = [[1,2,14],[0,1,1],[0,0,1]]
+            matrix_wC = [[1,1,9],[0,1,2],[0,0,1]]
+        h "Let's start off simple, you're welcome—row reduce [matrix_UR] to REF."
+        menu:
+            "[matrix_wA]":
+                jump j_q1_wA
+            "[matrix_REF]":
+                jump j_q1_correct
+            "[matrix_wB]":
+                jump j_q1_wB
+            "[matrix_wC]":
+                jump j_q1_wC
+        label j_q1_wA:
+            h "Can't identify the correct answer?"
+            jump j_q1
+        label j_q1_correct:
+            h "I'd be impressed if these operations weren't so elementary."
+            jump j_q1_end
+        label j_q1_wB:
+            h "I did say 'reduce,' didn't I?"
+            jump j_q1
+        label j_q1_wC:
+            h "The only thing reduced there were your IQ points!"
+            jump j_q1
     label j_q2:
         python:
             matrix_A = [[1],[2],[3]]
