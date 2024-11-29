@@ -16,6 +16,7 @@ define y = Character("Marlyn")
 define d = Character("Dean Mary Wells")
 define t = Character("Tool")
 define g = Character("Gamemakers")
+define mw = Character("Mystery Woman")
 
 image stagebg:
      "stagebg.png"
@@ -28,7 +29,9 @@ image map:
      zoom 1
 image intro = Text("This is a text displayable.", size=30)
 image waterloo = "waterloobg.jpg"
-image edcombg = "edcombg.png"
+image edcombg:
+     "edcombg.png"
+     zoom 2
 image toolbg:
      "toolbg.png"
      zoom 2
@@ -110,6 +113,8 @@ image zino cornucopiatwo:
 
 
 image dean mary wells end = "dean mary wells end.png"
+
+
 image kamkar cornucopia:
      "kamkar cornucopia.png"
      zoom 0.72
@@ -322,42 +327,6 @@ label start:
 #
 #        t "Thank you for being here today [name], good luck in the games today!"
 #        t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
     scene intro
@@ -623,15 +592,14 @@ label m_end:
             det_mat_1 = [[2,1,3,4],[0,3,1,2],[0,0,1,3],[0,0,0,4]]
             det_mat_2 = [[11,12,'3/5',13],[47,11,7,44],[8,-11,8,14],[100,5,-36,'e']]
         h "Dammit, I won't go down so easily! One more time: given [det_mat_1] and [det_mat_2], find det((AB(A^T)(A^-1)(B^(T)^-1)), if you think you can."
-        python: 
-            answer = renpy.input('det = ')
-            answer = answer.strip()
-        if answer == 24:
-            h "Wow—you're pretty determined."
-            jump j_q_end
-        else:
-            h "L bozo"
-            jump j_q_end
+        $ ans_aq2 = renpy.input("det = ")
+        $ is_true = (ans_aq2.strip() == "24")
+    if is_true:
+        h "Wow, you're pretty determined..."
+        jump j_q_end
+    else:
+        a "L bozo"
+        jump j_q3
     label j_q_end:
         h "Wait—Wait! It's clear to me that you're plenty capable—but hear me out a minute!"
         "His tone changed so suddenly…maybe I should give him a chance."
@@ -798,7 +766,7 @@ label m_end:
         a "Wow I'm suprised someone like you would care to know that." with vpunch
         jump a2_done 
     else:
-        a "hmmmm someone doesn't seem to care if their education is accredited"
+        a "hmmmm, someone doesn't seem to care if their education is accredited"
         jump a_q2
 
     label a2_done:
@@ -963,6 +931,27 @@ label p_end:
 
 # Dean MW says we won and offers us admission! (cameron)
 
+scene edcombg
+show dean mary wells end
+n "Wh- Where am I?!?"
+n "And who are you?!?"
+mw "There you are, well hello [name] it looks like you have won this years waterloo games..."
+mw "This must be very exciting for you, how do you feel?"
+n "I'm a little shaken, who are you? How do you know me?"
+mw "Oh my.. How rude of me to not even have introduced myself"
+d "I'm Dean Mary Well's and I am the creator of the Waterloo Games"
+d "I am here to congradulate you on a job well done and to tell you more about your prize..."
+n "My prize? I didn't even know I was getting one..."
+n "And the creator of the games? Why would you ever create such a terrible challenge for students?"
+d "We just have so many questions don't we"
+d "Don't worry about the games anymore, they are in your past..."
+n "They were so difficult, it'll be very hard to forget I-"
+d "Let me stop you right there, I'm sure that your prize will make you forget all about your worries"
+d "By successfully having complete the games, you have won..."
+d "{b} Free Tuition for the rest of your degree!"
+n "Free tuition?!?!?"
+n "I couldn't be happier, this is the best prize I could have ever dreamed of."
+"[name] shakes Dean Mary Wells' hand and goes on to complete their degree free from any hardship."
 # This ends the game.
 
 return
