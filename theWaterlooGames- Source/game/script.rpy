@@ -442,6 +442,22 @@ label start:
 
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
+    '''
+    scene cornucopiabg
+    g "Alright Tributes, the Waterloo Games are about to begin!"
+    "The tension in the air... it's palpable."
+    g "3..."
+    g "2..."
+    g "1..."
+    g "...BEGIN!"
+    #im gonna find a sound to put here
+    g "Good luck Tributes...You'll need it."
+    "Everyone's rushing to the centre- I need to move!"
+    P "Move it, Aucoin!"
+    "Everyone's making a mad dash for the supplies, I can't afford to be left with the scraps."
+    "There's some, what a relief!"
+    show azevedo fight
+    '''
 
 
     # After the fight, we rush off to a river, drink water, go to sleep in a tree(these can just be images of a river, tree, then black) (spruha)
