@@ -16,6 +16,7 @@ define y = Character("Marlyn")
 define d = Character("Dean Mary Wells")
 define t = Character("Tool")
 define g = Character("Gamemakers")
+define mw = Character("Mystery Woman")
 
 image stagebg:
      "stagebg.png"
@@ -28,7 +29,9 @@ image map:
      zoom 1
 image intro = Text("This is a text displayable.", size=30)
 image waterloo = "waterloobg.jpg"
-image edcombg = "edcombg.png"
+image edcombg:
+     "edcombg.png"
+     zoom 2
 image toolbg:
      "toolbg.png"
      zoom 2
@@ -110,6 +113,8 @@ image zino cornucopiatwo:
 
 
 image dean mary wells end = "dean mary wells end.png"
+
+
 image kamkar cornucopia:
      "kamkar cornucopia.png"
      zoom 0.72
@@ -292,53 +297,36 @@ label start:
 
         t "Ok [name] I just have one more question for you, one that everyone is wondering, then you are free to enter the Waterloo Games."
         t "If you win the Waterloo Games, what do you plan on doing?"
-    '''
-    yo idek whats wrong here
-    label m_qt3:
-     "How should I answer this so that people stay interested in me after the games?"
-        menu:
-            "I have a family back home and I really miss them. I love and miss them so much, hopefully I get to see them soon enough... {b} Personal Answer":
-                jump yuh1
-            
-            "If I win the games I am 100% going to party it up with all my friends and have an amazing time in the spotlight...{b} Proud Answer":
-                jump yuh2
-
-            "Well I miss my home town, so I will probably be out and about. If you see me around feel free to ask for a picture... {b} Publicity Answer":
-                play sound "laugh.mp3"
-                jump yuh3
-    
-    label yuh1:
-        $ menu_flag = True
-        t "Well isn't that sweet, hopefully you are able to do that... If not I might feel a little sad for you... Maybe..."
-        play sound "laugh.mp3"
-    label yuh2:
-        $ menu_flag = True
-        t "Somebody wants to seem cool, and some people may see it, but I dont..."
-        play sound "laugh.mp3"
-    label yuh3:
-        $ menu_flag = True
-        t "Someone knows how to work an audience! \n Me! Tool! ..."
-
-    t "Thank you for being here today [name], good luck in the games today!"
-    t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
-    '''
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#    label m_qt3:
+#        "How should I answer this so that people stay interested in me after the games?"
+#        menu:
+#            "I have a family back home and I really miss them. I love and miss them so much, hopefully I get to see them soon enough... {b} Personal Answer":
+#                jump yuh1
+#                
+#            "If I win the games I am 100% going to party it up with all my friends and have an amazing time in the spotlight...{b} Proud Answer":
+#                jump yuh2
+#
+#            "Well I miss my home town, so I will probably be out and about. If you see me around feel free to ask for a picture... {b} Publicity Answer":
+#                play sound "laugh.mp3"
+#                jump yuh3
+#    
+#    label yuh1:
+#        $ menu_flag = True
+#        t "Well isn't that sweet, hopefully you are able to do that... If not I might feel a little sad for you... Maybe..."
+#        play sound "laugh.mp3"
+#    label yuh2:
+#        $ menu_flag = True
+#        t "Somebody wants to seem cool, and some people may see it, but I dont..."
+#        play sound "laugh.mp3"
+#    label yuh3:
+#        $ menu_flag = True
+#        t "Someone knows how to work an audience! \n Me! Tool! ..."
+#
+#        t "Thank you for being here today [name], good luck in the games today!"
+#        t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
 
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
     scene intro
@@ -969,6 +957,27 @@ label p_end:
 
 # Dean MW says we won and offers us admission! (cameron)
 
+scene edcombg
+show dean mary wells end
+n "Wh- Where am I?!?"
+n "And who are you?!?"
+mw "There you are, well hello [name] it looks like you have won this years waterloo games..."
+mw "This must be very exciting for you, how do you feel?"
+n "I'm a little shaken, who are you? How do you know me?"
+mw "Oh my.. How rude of me to not even have introduced myself"
+d "I'm Dean Mary Well's and I am the creator of the Waterloo Games"
+d "I am here to congradulate you on a job well done and to tell you more about your prize..."
+n "My prize? I didn't even know I was getting one..."
+n "And the creator of the games? Why would you ever create such a terrible challenge for students?"
+d "We just have so many questions don't we"
+d "Don't worry about the games anymore, they are in your past..."
+n "They were so difficult, it'll be very hard to forget I-"
+d "Let me stop you right there, I'm sure that your prize will make you forget all about your worries"
+d "By successfully having complete the games, you have won..."
+d "{b} Free Tuition for the rest of your degree!"
+n "Free tuition?!?!?"
+n "I couldn't be happier, this is the best prize I could have ever dreamed of."
+"[name] shakes Dean Mary Wells' hand and goes on to complete their degree free from any hardship."
 # This ends the game.
 
 return
