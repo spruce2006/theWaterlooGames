@@ -548,7 +548,7 @@ label m_end:
     hide tam fighting with Fade(0.1, 0.0, 0.1, color='#fff')
     show forestbg
 
-    # We run away, and after like one frame of just getting away, we spot Jamilton, and fight him. (snack)
+#~~~~~~~~~~~~~~~~~~~We run away, and after like one frame of just getting away, we spot Jamilton, and fight him. (AIDAN)
     scene jhforest
     show jamilton talk:
         yalign 0.35
@@ -557,6 +557,35 @@ label m_end:
     h "You really thought you could sneak up on me, huh?"
     n "What—no, it's not like that!"
     h "You're not fooling me that easily! Come here and fight!"
+    label j_q1:
+        python: 
+            matrix_UR = [[2,1,9],[0,1,2],[1,0,3]]
+            matrix_REF = [[1,0,3],[0,1,2],[0,0,1]]
+            matrix_wA = [[1,0,0],[0,1,0],[0,0,1]]
+            matrix_wB = [[1,2,14],[0,1,1],[0,0,1]]
+            matrix_wC = [[1,1,9],[0,1,2],[0,0,1]]
+        h "Let's start off simple, you're welcome—row reduce [matrix_UR] to REF."
+        menu:
+            "[matrix_wA]":
+                jump j_q1_wA
+            "[matrix_REF]":
+                jump j_q1_correct
+            "[matrix_wB]":
+                jump j_q1_wB
+            "[matrix_wC]":
+                jump j_q1_wC
+        label j_q1_wA:
+            h "Can't identify the correct answer?"
+            jump j_q1
+        label j_q1_correct:
+            h "I'd be impressed if these operations weren't so elementary."
+            jump j_q2
+        label j_q1_wB:
+            h "I did say 'reduce,' didn't I?"
+            jump j_q1
+        label j_q1_wC:
+            h "The only thing reduced there were your IQ points!"
+            jump j_q1
     label j_q2:
         python:
             matrix_A = [[1],[2],[3]]
@@ -579,28 +608,27 @@ label m_end:
             h "Alright, so you're not trivial."
             jump j_q3
         label j_q2_wb:
-            h "ermmmm"
+            h "Haha, not quite. I knew you weren't cut out for this."
             jump j_q2
         label j_q2_wc:
-            h "bro.... that's not..."
+            h "Let x1 = 0. Therefore, your score must also equal zero."
             jump j_q2
         label j_q2_wd:
-            h "what the sigma"
+            h "A 2D line! That's new!"
             jump j_q2
     label j_q3:
         python:
             det_mat_1 = [[2,1,3,4],[0,3,1,2],[0,0,1,3],[0,0,0,4]]
             det_mat_2 = [[11,12,'3/5',13],[47,11,7,44],[8,-11,8,14],[100,5,-36,'e']]
         h "Dammit, I won't go down so easily! One more time: given [det_mat_1] and [det_mat_2], find det((AB(A^T)(A^-1)(B^(T)^-1)), if you think you can."
-        python: 
-            answer = renpy.input('det = ')
-            answer = answer.strip()
-        if answer == 24:
-            h "Wow—you're pretty determined."
-            jump j_q_end
-        else:
-            h "L bozo"
-            jump j_q_end
+        $ j_q3_input = renpy.input("det = ")
+        $ j_q3_correct = (j_q3_input.strip() == "24")
+    if j_q3_correct:
+        h "Wow, you're pretty determined..."
+        jump j_q_end
+    else:
+        h "Hey, maybe you should go home. I don't think you have what it takes for this."
+        jump j_q3
     label j_q_end:
         h "Wait—Wait! It's clear to me that you're plenty capable—but hear me out a minute!"
         "His tone changed so suddenly…maybe I should give him a chance."
@@ -609,10 +637,7 @@ label m_end:
         h "I don't think either of us can manage alone; so, what do you say to an alliance of our own?"
         n "Yeah, I think that may be in our best interests…deal."
         h "We'll be better together, no doubt."
-    # fight will happen here
-    # After fighting Hamilton, he's like "wait wait wait let's just team up and take down Zino and Aucoin! They're too powerful for either of us to fight them alone. We're better together." (snack)
-    
-
+#~~~~~~~~~~~~~~~~~~~~~~~ END SCENE
     # We approach Zino and Aucoin and Hamilton fights them. Hamilton disappears! (maddy)
     scene forestbg 
     show aucoin zino fight:
@@ -767,7 +792,7 @@ label m_end:
         a "Wow I'm suprised someone like you would care to know that." with vpunch
         jump a2_done 
     else:
-        a "hmmmm someone doesn't seem to care if their education is accredited"
+        a "hmmmm, someone doesn't seem to care if their education is accredited"
         jump a_q2
 
     label a2_done:
