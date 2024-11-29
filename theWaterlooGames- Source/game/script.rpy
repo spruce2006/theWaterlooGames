@@ -136,7 +136,9 @@ image jamilton cornucopiatwo:
 image azevedo cornucopia:
      "azevedo cornucopia.png"
      zoom 0.25
-
+image azevedo cornucopiatwo:
+     "azevedo cornucopia.png"
+     zoom 0.5
 
 image jamilton talk = "jamilton talk.png"
 
