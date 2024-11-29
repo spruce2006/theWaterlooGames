@@ -292,55 +292,36 @@ label start:
 
         t "Ok [name] I just have one more question for you, one that everyone is wondering, then you are free to enter the Waterloo Games."
         t "If you win the Waterloo Games, what do you plan on doing?"
+'''
+yo idek whats wrong here
+    label m_qt3:
+     "How should I answer this so that people stay interested in me after the games?"
+        menu:
+            "I have a family back home and I really miss them. I love and miss them so much, hopefully I get to see them soon enough... {b} Personal Answer":
+                jump yuh1
+            
+            "If I win the games I am 100% going to party it up with all my friends and have an amazing time in the spotlight...{b} Proud Answer":
+                jump yuh2
 
+            "Well I miss my home town, so I will probably be out and about. If you see me around feel free to ask for a picture... {b} Publicity Answer":
+                play sound "laugh.mp3"
+                jump yuh3
+    
+    label yuh1:
+        $ menu_flag = True
+        t "Well isn't that sweet, hopefully you are able to do that... If not I might feel a little sad for you... Maybe..."
+        play sound "laugh.mp3"
+    label yuh2:
+        $ menu_flag = True
+        t "Somebody wants to seem cool, and some people may see it, but I dont..."
+        play sound "laugh.mp3"
+    label yuh3:
+        $ menu_flag = True
+        t "Someone knows how to work an audience! \n Me! Tool! ..."
 
-
-#    label m_qt3:
-#        "How should I answer this so that people stay interested in me after the games?"
-#        menu:
-#            "I have a family back home and I really miss them. I love and miss them so much, hopefully I get to see them soon enough... {b} Personal Answer":
-#                jump yuh1
-#                
-#            "If I win the games I am 100% going to party it up with all my friends and have an amazing time in the spotlight...{b} Proud Answer":
-#                jump yuh2
-#
-#            "Well I miss my home town, so I will probably be out and about. If you see me around feel free to ask for a picture... {b} Publicity Answer":
-#                play sound "laugh.mp3"
-#                jump yuh3
-#    
-#    label yuh1:
-#        $ menu_flag = True
-#        t "Well isn't that sweet, hopefully you are able to do that... If not I might feel a little sad for you... Maybe..."
-#        play sound "laugh.mp3"
-#    label yuh2:
-#        $ menu_flag = True
-#        t "Somebody wants to seem cool, and some people may see it, but I dont..."
-#        play sound "laugh.mp3"
-#    label yuh3:
-#        $ menu_flag = True
-#        t "Someone knows how to work an audience! \n Me! Tool! ..."
-#
-#        t "Thank you for being here today [name], good luck in the games today!"
-#        t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    t "Thank you for being here today [name], good luck in the games today!"
+    t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
+'''
 
 
 
