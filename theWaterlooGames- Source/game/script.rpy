@@ -175,7 +175,7 @@ label start:
     scene map:
         xalign 0.0
         yalign 0.4
-    nvle "Welcome, students of Waterloo. Welcome to District 12's reaping of the 29th annual Hunger Games." 
+    nvle "Welcome, students of Waterloo. Welcome to District 12's reaping of the 29th annual Waterloo Games." 
     nvle "As you may know, disaster struck what used to be Old Waterloo, and what rose from the ashes came the new land of Great Waterloo."
     nvle "Great Waterloo is the land we all stand on now."
     nvle "Great Waterloo was a shining capitol ringed by students and professors, each contributing to one specialty in the majority."
@@ -244,7 +244,7 @@ label start:
     t "Well then... isn't somebody confident..."
     t "So, you're not worried that there may be some tougher opponents?"
     label m_qt1:
-     "How would I respond so that the viewers like me more?"
+     "How should I respond so that the viewers like me more?"
     menu:
         "There might be a few toughish tributes, but definetly not nearly as tough as me. {b} Bold Answer":
             jump yars1
@@ -252,7 +252,7 @@ label start:
         "That's definetly something that has been on my mind, but no matter, I am sure i've got this. {b} Safe Answer":
             jump yars2
 
-        "I for sure think that there will be some Strong opponents but if I can team up with someone, the power of teamwork will preveil. {b} Quirky Answer ":
+        "I for sure think that there will be some strong opponents but if I can team up with someone, the power of teamwork will preveil. {b} Quirky Answer ":
             jump yars3
     
     label yars1:
@@ -273,7 +273,7 @@ label start:
     label m_qt2:
      "What can I say so that the other tributes don't think im an easy opponent?"
     menu:
-        "Well I haven't really though about it, probably just try my best... {b} Unsure Answer":
+        "Well I haven't really thought about it, probably just try my best... {b} Unsure Answer":
             jump yup1
             
         "I've been studying and training for a long time, I am super smart and am sure that I can tackle any question that comes my way. {b} Confident Answer":
@@ -297,7 +297,11 @@ label start:
 
         t "Ok [name] I just have one more question for you, one that everyone is wondering, then you are free to enter the Waterloo Games."
         t "If you win the Waterloo Games, what do you plan on doing?"
-
+        t "Oh what's that??"
+        t "I'm so sorry [name] but it looks like your time is up."
+        t "Thank you for being here today [name], good luck in the games today!"
+        t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
+    play sound "toolclap.mp3"
 
 
 #    label m_qt3:
@@ -964,19 +968,20 @@ n "And who are you?!?"
 mw "There you are, well hello [name] it looks like you have won this years waterloo games..."
 mw "This must be very exciting for you, how do you feel?"
 n "I'm a little shaken, who are you? How do you know me?"
-mw "Oh my.. How rude of me to not even have introduced myself"
+mw "Oh my... How rude of me to not even have introduced myself"
 d "I'm Dean Mary Well's and I am the creator of the Waterloo Games"
-d "I am here to congradulate you on a job well done and to tell you more about your prize..."
+d "I am here to congratulate you on a job well done and to tell you more about your prize..."
 n "My prize? I didn't even know I was getting one..."
 n "And the creator of the games? Why would you ever create such a terrible challenge for students?"
-d "We just have so many questions don't we"
+d "We just have so many questions don't we..."
 d "Don't worry about the games anymore, they are in your past..."
 n "They were so difficult, it'll be very hard to forget I-"
 d "Let me stop you right there, I'm sure that your prize will make you forget all about your worries"
 d "By successfully having complete the games, you have won..."
+d "..."
 d "{b} Free Tuition for the rest of your degree!"
 n "Free tuition?!?!?"
-n "I couldn't be happier, this is the best prize I could have ever dreamed of."
+n "I couldn't be happier!!! This is the best prize I could have ever dreamed of."
 "[name] shakes Dean Mary Wells' hand and goes on to complete their degree free from any hardship."
 # This ends the game.
 
