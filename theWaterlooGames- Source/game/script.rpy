@@ -292,8 +292,8 @@ label start:
 
         t "Ok [name] I just have one more question for you, one that everyone is wondering, then you are free to enter the Waterloo Games."
         t "If you win the Waterloo Games, what do you plan on doing?"
-'''
-yo idek whats wrong here
+    '''
+    yo idek whats wrong here
     label m_qt3:
      "How should I answer this so that people stay interested in me after the games?"
         menu:
@@ -321,7 +321,7 @@ yo idek whats wrong here
 
     t "Thank you for being here today [name], good luck in the games today!"
     t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
-'''
+    '''
 
 
 
