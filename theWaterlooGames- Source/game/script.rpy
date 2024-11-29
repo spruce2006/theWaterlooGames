@@ -133,8 +133,13 @@ image jamilton cornucopiatwo:
      "jamilton cornucopia.png"
      zoom 0.5
 
+image azevedo cornucopia:
+     "azevedo cornucopia.png"
+     zoom 0.25
+
 
 image jamilton talk = "jamilton talk.png"
+
 image bg river:
     "bg river.jpg"
     zoom 3.25
@@ -353,9 +358,9 @@ label start:
     show kamkar cornucopia:
         xalign 0.02
         yalign 0.2
-    #show azevedo cornucopia:
-        #xalign 1.0
-        #yalign 0.0
+    show azevedo cornucopia:
+        xalign 0.62
+        yalign 0.4
     "Wow, I didn't think that there would be so many other tributes to face off against."
     "Some of them look like really tough opponents."
     "Hmmm... I think I might recognize some of these people..."
