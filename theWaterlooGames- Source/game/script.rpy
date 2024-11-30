@@ -16,6 +16,7 @@ define y = Character("Marlyn")
 define d = Character("Dean Mary Wells")
 define t = Character("Tool")
 define g = Character("Gamemakers")
+define mw = Character("Mystery Woman")
 
 image stagebg:
      "stagebg.png"
@@ -28,16 +29,18 @@ image map:
      zoom 1
 image intro = Text("This is a text displayable.", size=30)
 image waterloo = "waterloobg.jpg"
-image edcombg = "edcombg.png"
+image edcombg:
+     "edcombg.png"
+     zoom 2
 image toolbg:
      "toolbg.png"
      zoom 2
 image nightbg:
      "nightbg.jpg"
-     zoom 3
+     zoom 3.2
 image fallen:
      "the fallen.jpg"
-     zoom 10
+     zoom 2.67
 #image cornucopiabg:
 #   "cornucopiabg.png"
 image forestbg:
@@ -110,6 +113,8 @@ image zino cornucopiatwo:
 
 
 image dean mary wells end = "dean mary wells end.png"
+
+
 image kamkar cornucopia:
      "kamkar cornucopia.png"
      zoom 0.72
@@ -128,8 +133,16 @@ image jamilton cornucopiatwo:
      "jamilton cornucopia.png"
      zoom 0.5
 
+image azevedo cornucopia:
+     "azevedo cornucopia.png"
+     zoom 0.25
+image azevedo cornucopiatwo:
+     "azevedo cornucopia.png"
+     zoom 0.5
 
 image jamilton talk = "jamilton talk.png"
+image azevedo fight = "azevedo fight.png"
+
 image bg river:
     "bg river.jpg"
     zoom 3.25
@@ -170,7 +183,7 @@ label start:
     scene map:
         xalign 0.0
         yalign 0.4
-    nvle "Welcome, students of Waterloo. Welcome to District 12's reaping of the 29th annual Hunger Games." 
+    nvle "Welcome, students of Waterloo. Welcome to District 12's reaping of the 29th annual Waterloo Games." 
     nvle "As you may know, disaster struck what used to be Old Waterloo, and what rose from the ashes came the new land of Great Waterloo."
     nvle "Great Waterloo is the land we all stand on now."
     nvle "Great Waterloo was a shining capitol ringed by students and professors, each contributing to one specialty in the majority."
@@ -221,7 +234,7 @@ label start:
     stop sound fadeout 1.0
     with Dissolve(.5)
 
-    # The Tool asks you a bunch of questions; just interactive not for points (snack)
+    # The Tool asks you a bunch of questions; just interactive not for points (Cameron)
     scene toolbg
     show tool
     t "Welcome to the Tool show! With your beloved host, Tool, me!"
@@ -239,7 +252,7 @@ label start:
     t "Well then... isn't somebody confident..."
     t "So, you're not worried that there may be some tougher opponents?"
     label m_qt1:
-     "How would I respond so that the viewers like me more?"
+     "How should I respond so that the viewers like me more?"
     menu:
         "There might be a few toughish tributes, but definetly not nearly as tough as me. {b} Bold Answer":
             jump yars1
@@ -247,7 +260,7 @@ label start:
         "That's definetly something that has been on my mind, but no matter, I am sure i've got this. {b} Safe Answer":
             jump yars2
 
-        "I for sure think that there will be some Strong opponents but if I can team up with someone, the power of teamwork will preveil. {b} Quirky Answer ":
+        "I for sure think that there will be some strong opponents but if I can team up with someone, the power of teamwork will preveil. {b} Quirky Answer ":
             jump yars3
     
     label yars1:
@@ -268,7 +281,7 @@ label start:
     label m_qt2:
      "What can I say so that the other tributes don't think im an easy opponent?"
     menu:
-        "Well I haven't really though about it, probably just try my best... {b} Unsure Answer":
+        "Well I haven't really thought about it, probably just try my best... {b} Unsure Answer":
             jump yup1
             
         "I've been studying and training for a long time, I am super smart and am sure that I can tackle any question that comes my way. {b} Confident Answer":
@@ -292,7 +305,11 @@ label start:
 
         t "Ok [name] I just have one more question for you, one that everyone is wondering, then you are free to enter the Waterloo Games."
         t "If you win the Waterloo Games, what do you plan on doing?"
-
+        t "Oh what's that??"
+        t "I'm so sorry [name] but it looks like your time is up."
+        t "Thank you for being here today [name], good luck in the games today!"
+        t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
+    play sound "toolclap.mp3"
 
 
 #    label m_qt3:
@@ -323,42 +340,6 @@ label start:
 #        t "Thank you for being here today [name], good luck in the games today!"
 #        t "That was [name] for you folks, I hope you enjoyed our interview today, catch you next time!"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     # Cut to the Cornucopia; go through each tribute and look at their stats(the player is the one thinking things about them, so there should be no name in the overhead part) (cameron)
     scene intro
     with pixellate
@@ -380,9 +361,9 @@ label start:
     show kamkar cornucopia:
         xalign 0.02
         yalign 0.2
-    #show azevedo cornucopia:
-        #xalign 1.0
-        #yalign 0.0
+    show azevedo cornucopia:
+        xalign 0.62
+        yalign 0.4
     "Wow, I didn't think that there would be so many other tributes to face off against."
     "Some of them look like really tough opponents."
     "Hmmm... I think I might recognize some of these people..."
@@ -462,7 +443,81 @@ label start:
 
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
+    
+    scene intro
+    g "Alright Tributes, the Waterloo Games are about to begin!"
+    "The tension in the air... it's palpable."
+    play sound "start beeps.mp3"
+    g "3..."
+    g "2..."
+    g "1..."
+    g "...BEGIN!"
+    #im gonna find a sound to put here
+    g "Good luck Tributes...You'll need it."
+    "Everyone's rushing to the centre- I need to move!"
+    p "Move it, Aucoin!"
+    "Everyone's making a mad dash for the supplies, I can't afford to be left with the scraps."
+    "There's some, what a relief!"
+    v "Absolutely not, that's mine!"
+    show azevedo fight:
+        zoom 0.6
+        xalign 0.5
+        yalign 1.0
+    "Staring me down is none other than Matheus Azevedo."
+    "The look on his face... he's not here to mess around."
+    n "I guess there's no easing into this."
+    label v_q1:
+        v "I'll give you a chance... find the derivative of f(x) = 3x^2 + 21x + 7."
+        $ v_q1_input = renpy.input("f'(x) = ")
+        $ v_q1_correct = (v_q1_input.strip() == "6x+21")
+    if v_q1_correct:
+        v "Fine, you've got it. Here's something a little more advanced—if you can take the heat!"
+        jump v_q2
+    else:
+        v "Nearing your limit already?"
+        jump v_q1
+    label v_q2:
+        v "For what value of x is there a vertical asymptote on this function? f(x) = (2x + 3)/(x)."
+        menu:
+            "None!":
+                jump v_q2_wA
+            "x=0":
+                jump v_q2_c
+            "x=-1":
+                jump v_q2_wB
+            
+        label v_q2_wA:
+            v "It seems like the answer isn't in the range of your mind."
+            jump v_q2
+        label v_q2_c:
+            v "Gah- Fine, I won't lose!"
+            jump v_q3
+        label v_q2_wB:
+            v "Maybe your real asymptote is x='the correct answer.'"
+            jump v_q2
+        
+    label v_q3:
+        v "By what factor is this function being vertically stretched? f(x) = 10cos(4(3-x)) + 5."
+        menu:
+            "By a factor of 10":
+                jump v_q3_c
+            "By a factor of 1/10":
+                jump v_q3_wB
+            "By a factor of 4":
+                jump v_q3_wC
+        label v_q3_c:
+            v "No! Not so soon..."
+            jump v_q3_end
+        label v_q3_wB:
+            v "I wish you wouldn't."
+            jump v_q3
+        label v_q3_wC:
+            v "Now that's a real stretch."
+            jump v_q3
 
+    label v_q3_end:
+        v "I can't believe this..."
+        hide azevedo fight
 
     # After the fight, we rush off to a river, drink water, go to sleep in a tree(these can just be images of a river, tree, then black) (spruha)
     scene bg river
@@ -579,7 +634,7 @@ label m_end:
     hide tam fighting with Fade(0.1, 0.0, 0.1, color='#fff')
     show forestbg
 
-    # We run away, and after like one frame of just getting away, we spot Jamilton, and fight him. (snack)
+#~~~~~~~~~~~~~~~~~~~We run away, and after like one frame of just getting away, we spot Jamilton, and fight him. (AIDAN)
     scene jhforest
     show jamilton talk:
         yalign 0.35
@@ -588,6 +643,35 @@ label m_end:
     h "You really thought you could sneak up on me, huh?"
     n "What—no, it's not like that!"
     h "You're not fooling me that easily! Come here and fight!"
+    label j_q1:
+        python: 
+            matrix_UR = [[2,1,9],[0,1,2],[1,0,3]]
+            matrix_REF = [[1,0,3],[0,1,2],[0,0,1]]
+            matrix_wA = [[1,0,0],[0,1,0],[0,0,1]]
+            matrix_wB = [[1,2,14],[0,1,1],[0,0,1]]
+            matrix_wC = [[1,1,9],[0,1,2],[0,0,1]]
+        h "Let's start off simple, you're welcome—row reduce [matrix_UR] to REF."
+        menu:
+            "[matrix_wA]":
+                jump j_q1_wA
+            "[matrix_REF]":
+                jump j_q1_correct
+            "[matrix_wB]":
+                jump j_q1_wB
+            "[matrix_wC]":
+                jump j_q1_wC
+        label j_q1_wA:
+            h "Can't identify the correct answer?"
+            jump j_q1
+        label j_q1_correct:
+            h "I'd be impressed if these operations weren't so elementary."
+            jump j_q2
+        label j_q1_wB:
+            h "I did say 'reduce,' didn't I?"
+            jump j_q1
+        label j_q1_wC:
+            h "The only thing reduced there were your IQ points!"
+            jump j_q1
     label j_q2:
         python:
             matrix_A = [[1],[2],[3]]
@@ -610,28 +694,27 @@ label m_end:
             h "Alright, so you're not trivial."
             jump j_q3
         label j_q2_wb:
-            h "ermmmm"
+            h "Haha, not quite. I knew you weren't cut out for this."
             jump j_q2
         label j_q2_wc:
-            h "bro.... that's not..."
+            h "Let x1 = 0. Therefore, your score must also equal zero."
             jump j_q2
         label j_q2_wd:
-            h "what the sigma"
+            h "A 2D line! That's new!"
             jump j_q2
     label j_q3:
         python:
             det_mat_1 = [[2,1,3,4],[0,3,1,2],[0,0,1,3],[0,0,0,4]]
             det_mat_2 = [[11,12,'3/5',13],[47,11,7,44],[8,-11,8,14],[100,5,-36,'e']]
         h "Dammit, I won't go down so easily! One more time: given [det_mat_1] and [det_mat_2], find det((AB(A^T)(A^-1)(B^(T)^-1)), if you think you can."
-        python: 
-            answer = renpy.input('det = ')
-            answer = answer.strip()
-        if answer == 24:
-            h "Wow—you're pretty determined."
-            jump j_q_end
-        else:
-            h "L bozo"
-            jump j_q_end
+        $ j_q3_input = renpy.input("det = ")
+        $ j_q3_correct = (j_q3_input.strip() == "24")
+    if j_q3_correct:
+        h "Wow, you're pretty determined..."
+        jump j_q_end
+    else:
+        h "Hey, maybe you should go home. I don't think you have what it takes for this."
+        jump j_q3
     label j_q_end:
         h "Wait—Wait! It's clear to me that you're plenty capable—but hear me out a minute!"
         "His tone changed so suddenly…maybe I should give him a chance."
@@ -640,10 +723,7 @@ label m_end:
         h "I don't think either of us can manage alone; so, what do you say to an alliance of our own?"
         n "Yeah, I think that may be in our best interests…deal."
         h "We'll be better together, no doubt."
-    # fight will happen here
-    # After fighting Hamilton, he's like "wait wait wait let's just team up and take down Zino and Aucoin! They're too powerful for either of us to fight them alone. We're better together." (snack)
-    
-
+#~~~~~~~~~~~~~~~~~~~~~~~ END SCENE
     # We approach Zino and Aucoin and Hamilton fights them. Hamilton disappears! (maddy)
     scene forestbg 
     show aucoin zino fight:
@@ -798,7 +878,7 @@ label m_end:
         a "Wow I'm suprised someone like you would care to know that." with vpunch
         jump a2_done 
     else:
-        a "hmmmm someone doesn't seem to care if their education is accredited"
+        a "hmmmm, someone doesn't seem to care if their education is accredited"
         jump a_q2
 
     label a2_done:
@@ -854,7 +934,7 @@ label m_end:
 scene nightbg with Dissolve(.5)
 "By the time the fight with Zino and Aucoin was over, it was already night time."
 "I'm so tired. I can't believe it's only been two days."
-scene the fallen with Dissolve(.5)
+scene fallen with Dissolve(.5)
 play sound "cannon.mp3"
 play sound "cannon.mp3"
 play sound "cannon.mp3"
@@ -963,6 +1043,28 @@ label p_end:
 
 # Dean MW says we won and offers us admission! (cameron)
 
+scene edcombg
+show dean mary wells end
+n "Wh- Where am I?!?"
+n "And who are you?!?"
+mw "There you are, well hello [name] it looks like you have won this years waterloo games..."
+mw "This must be very exciting for you, how do you feel?"
+n "I'm a little shaken, who are you? How do you know me?"
+mw "Oh my... How rude of me to not even have introduced myself"
+d "I'm Dean Mary Wells and I am the creator of the Waterloo Games"
+d "I am here to congratulate you on a job well done and to tell you more about your prize..."
+n "My prize? I didn't even know I was getting one..."
+n "And the creator of the games? Why would you ever create such a terrible challenge for students?"
+d "We just have so many questions don't we..."
+d "Don't worry about the games anymore, they are in your past..."
+n "They were so difficult, it'll be very hard to forget I-"
+d "Let me stop you right there, I'm sure that your prize will make you forget all about your worries"
+d "By successfully having complete the games, you have won..."
+d "..."
+d "{b} Free Tuition for the rest of your degree!"
+n "Free tuition?!?!?"
+n "I couldn't be happier!!! This is the best prize I could have ever dreamed of."
+"[name] shakes Dean Mary Wells' hand and goes on to complete their degree free from any hardship."
 # This ends the game.
 
 return
