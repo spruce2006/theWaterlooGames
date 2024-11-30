@@ -224,11 +224,11 @@ label start:
 
     show marlyn behind justin
     j "There you are! C'mon, you're supposed to be on The Tool Show in 5 minutes!!!"
-    n "Wait! I don't even know what's happening right now" 
-    j "Y'know what, I so resonate with that"
-    y "Don't worry, you seem like a tough fighter. When the Games begin, you'll face off your opponents and defeat them by answering their questions, but beware, I've heard there's some tough professors from the districts this year."
+    n "Wait! I don't even know what's happening right now!" 
+    j "Y'know what, I so resonate with that."
+    y "Don't worry, you seem like a tough fighter. When the Games begin, you'll face off your opponents and defeat them by answering their questions. But beware! I've heard there's some tough professors from the districts this year."
     play sound "audience clapping.mp3" 
-    j "Now i'd love to chit chat some more, but you've gotta head on stage now"
+    j "Now i'd love to chit chat some more, but you've gotta head on stage!"
     n "stage?!?!"
     scene sleep
     stop sound fadeout 1.0
@@ -732,8 +732,8 @@ label m_end:
         xalign 1.0
     show bush:
         zoom 2
-        yalign 1.3
-        xalign 0.8
+        yalign 1.4
+        xalign 1.0
 
     show jamilton talk:
         yalign 0.1
@@ -754,8 +754,8 @@ label m_end:
         xalign 1.0
     show bush:
         zoom 2
-        yalign 1.3
-        xalign 0.8
+        yalign 1.4
+        xalign 1.0  
    
     z "Hamilton put up more of a fight than I thought."
     a "Yeah, I almost lost in our third round - cross products always trip me up."
@@ -769,6 +769,7 @@ label m_end:
     # Zino and Aucoin approach us and start to fight us. At the end, they disappear. (maddy)
     scene forestbg
     show aucoin zino fight:
+        zoom 1.5
         yalign 0.2
         xalign 0.5
     a "Well well well"
@@ -807,7 +808,7 @@ label m_end:
             jump a_q1
    
     label a1_done:
-    z "it seems my partner here may have underestimated you, I won't make the same mistake."
+    z "it seems my partner here may have underestimated you. I won't make the same mistake."
     z "balance this equation!, _ CH4 + _ O2 -> CO2 + 2H2O"
     label z_q1:
         menu:
