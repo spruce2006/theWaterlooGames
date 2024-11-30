@@ -447,6 +447,7 @@ label start:
     scene intro
     g "Alright Tributes, the Waterloo Games are about to begin!"
     "The tension in the air... it's palpable."
+    play sound "start beeps.mp3"
     g "3..."
     g "2..."
     g "1..."
