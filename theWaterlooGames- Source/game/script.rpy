@@ -37,10 +37,10 @@ image toolbg:
      zoom 2
 image nightbg:
      "nightbg.jpg"
-     zoom 3
+     zoom 3.2
 image fallen:
      "the fallen.jpg"
-     zoom 10
+     zoom 2.67
 #image cornucopiabg:
 #   "cornucopiabg.png"
 image forestbg:
@@ -234,7 +234,7 @@ label start:
     stop sound fadeout 1.0
     with Dissolve(.5)
 
-    # The Tool asks you a bunch of questions; just interactive not for points (snack)
+    # The Tool asks you a bunch of questions; just interactive not for points (Cameron)
     scene toolbg
     show tool
     t "Welcome to the Tool show! With your beloved host, Tool, me!"
@@ -934,7 +934,7 @@ label m_end:
 scene nightbg with Dissolve(.5)
 "By the time the fight with Zino and Aucoin was over, it was already night time."
 "I'm so tired. I can't believe it's only been two days."
-scene the fallen with Dissolve(.5)
+scene fallen with Dissolve(.5)
 play sound "cannon.mp3"
 play sound "cannon.mp3"
 play sound "cannon.mp3"
