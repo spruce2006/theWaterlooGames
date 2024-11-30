@@ -141,6 +141,7 @@ image azevedo cornucopiatwo:
      zoom 0.5
 
 image jamilton talk = "jamilton talk.png"
+image azevedo fight = "azevedo fight.png"
 
 image bg river:
     "bg river.jpg"
@@ -457,7 +458,10 @@ label start:
     "Everyone's making a mad dash for the supplies, I can't afford to be left with the scraps."
     "There's some, what a relief!"
     v "Absolutely not, that's mine!"
-    #show azevedo fight
+    show azevedo fight:
+        zoom 0.6
+        xalign 0.5
+        yalign 1.0
     "Staring me down is none other than Matheus Azevedo"
     "The look on his face... he's not here to mess around."
     n "I guess there's no easing into this."
