@@ -64,7 +64,7 @@ image pendar cornucopiatwo:
      zoom 0.6
 image pendar fighting:
      "pendar fighting.png"
-     zoom 3
+     zoom 2
 image p q3:
      "p q3.png"
      zoom 2
