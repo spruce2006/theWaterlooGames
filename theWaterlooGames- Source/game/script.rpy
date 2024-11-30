@@ -1051,7 +1051,7 @@ mw "There you are, well hello [name] it looks like you have won this years water
 mw "This must be very exciting for you, how do you feel?"
 n "I'm a little shaken, who are you? How do you know me?"
 mw "Oh my... How rude of me to not even have introduced myself"
-d "I'm Dean Mary Well's and I am the creator of the Waterloo Games"
+d "I'm Dean Mary Wells and I am the creator of the Waterloo Games"
 d "I am here to congratulate you on a job well done and to tell you more about your prize..."
 n "My prize? I didn't even know I was getting one..."
 n "And the creator of the games? Why would you ever create such a terrible challenge for students?"
