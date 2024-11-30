@@ -442,8 +442,8 @@ label start:
 
 
     # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
-    '''
-    scene cornucopiabg
+    
+    scene intro
     g "Alright Tributes, the Waterloo Games are about to begin!"
     "The tension in the air... it's palpable."
     g "3..."
@@ -453,12 +453,66 @@ label start:
     #im gonna find a sound to put here
     g "Good luck Tributes...You'll need it."
     "Everyone's rushing to the centre- I need to move!"
-    P "Move it, Aucoin!"
+    p "Move it, Aucoin!"
     "Everyone's making a mad dash for the supplies, I can't afford to be left with the scraps."
     "There's some, what a relief!"
-    show azevedo fight
-    '''
+    v "Absolutely not, that's mine!"
+    #show azevedo fight
+    "Staring me down is none other than Matheus Azevedo"
+    "The look on his face... he's not here to mess around."
+    n "I guess there's no easing into this."
+    label v_q1:
+        v "I'll give you a chance... find the derivative of f(x) = 3x^2 + 21x + 7."
+        $ v_q1_input = renpy.input("f'(x) = ")
+        $ v_q1_correct = (v_q1_input.strip() == "6x+21")
+    if v_q1_correct:
+        v "Fine, you've got it. Here's something a little more advanced—if you can take the heat!"
+        jump v_q2
+    else:
+        v "Nearing your limit already?"
+        jump v_q1
+    label v_q2:
+        v "For what value of x is there a vertical asymptote on this function? f(x) = (2x + 3)/(x)."
+        menu:
+            "None!":
+                jump v_q2_wA
+            "x=0":
+                jump v_q2_c
+            "x=-1":
+                jump v_q2_wB
+            
+        label v_q2_wA:
+            v "It seems like the answer isn't in the range of your mind."
+            jump v_q2
+        label v_q2_c:
+            v "Gah- Fine, I won't lose!"
+            jump v_q3
+        label v_q2_wB:
+            v "Maybe your real asymptote is x='the correct answer.'"
+            jump v_q2
+        
+    label v_q3:
+        v "By what factor is this function being vertically stretched? f(x) = 10cos(4(3-x)) + 5."
+        menu:
+            "By a factor of 10":
+                jump v_q3_c
+            "By a factor of 1/10":
+                jump v_q3_wB
+            "By a factor of 4":
+                jump v_q3_wC
+        label v_q3_c:
+            v "No! Not so soon..."
+            jump v_q3_end
+        label v_q3_wB:
+            v "I wish you wouldn't."
+            jump v_q3
+        label v_q3_wC:
+            v "Now that's a real stretch."
+            jump v_q3
 
+    label v_q3_end:
+        v "I can't believe this..."
+        hide azevedo fight
 
     # After the fight, we rush off to a river, drink water, go to sleep in a tree(these can just be images of a river, tree, then black) (spruha)
     scene bg river

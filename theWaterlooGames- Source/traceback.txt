@@ -1,24 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 298, in script
-    menu:
-TypeError: must be real number, not TagQuotingDict
+  File "game/script.rpy", line 480, in script
+    jump v_q2_c
+ScriptError: could not find label 'v_q2_c'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 298, in script
-    menu:
-  File "C:\Users\tooki\OneDrive - University of Waterloo\CHE 120\The Waterloo Games\renpy-8.3.3-sdk\renpy\ast.py", line 1619, in execute
-    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
-  File "C:\Users\tooki\OneDrive - University of Waterloo\CHE 120\The Waterloo Games\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 99, in menu
-    label = substitute(label)
-  File "C:\Users\tooki\OneDrive - University of Waterloo\CHE 120\The Waterloo Games\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 62, in substitute
-    return s % renpy.exports.tag_quoting_dict
-TypeError: must be real number, not TagQuotingDict
+  File "game/script.rpy", line 480, in script
+    jump v_q2_c
+  File "C:\Users\tooki\OneDrive - University of Waterloo\CHE 120\The Waterloo Games\renpy-8.3.3-sdk\renpy\ast.py", line 1699, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\tooki\OneDrive - University of Waterloo\CHE 120\The Waterloo Games\renpy-8.3.3-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'v_q2_c'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.3.24111502
 theWaterlooGames 1.0
-Thu Nov 28 21:33:18 2024
+Fri Nov 29 21:21:14 2024
