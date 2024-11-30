@@ -463,7 +463,7 @@ label start:
         zoom 0.6
         xalign 0.5
         yalign 1.0
-    "Staring me down is none other than Matheus Azevedo"
+    "Staring me down is none other than Matheus Azevedo."
     "The look on his face... he's not here to mess around."
     n "I guess there's no easing into this."
     label v_q1:
