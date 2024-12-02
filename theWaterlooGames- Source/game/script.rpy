@@ -287,7 +287,7 @@ label start:
         "I've been studying and training for a long time, I am super smart and am sure that I can tackle any question that comes my way. {b} Confident Answer":
             jump yup2
 
-        "Well as long as nobody asks me about Matricies I should be good... I'm talking to you Jordan hamilton. {b} Comedic Answer ":
+        "Well as long as nobody asks me about Matricies I should be good... I'm talking to you Jordan Hamilton. {b} Comedic Answer ":
             play sound "laugh.mp3"
             jump yup3
     
@@ -774,7 +774,7 @@ label m_end:
         xalign 0.5
     a "Well well well"
     a "why isn't it [name] the mystery tribute."
-    n "you must be Zino Ojobo and Marc Aucoin"
+    n "you must be Zino Ojogbo and Marc Aucoin"
     z "Good guess"
     a "Enough chit chat!"
     a "Are you ready to meet the same fate as your friend Hamilton?"
