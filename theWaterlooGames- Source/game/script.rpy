@@ -442,7 +442,7 @@ label start:
     "{i} Strengths: Strengths: Strength of a tank, His handy manometer \nWeaknesses: Finding mass fraction from mole fraction"
 
 
-    # We run off the platform and face off with Azevedo. At the end, he disappears. (snack)
+    # We run off the platform and face off with Azevedo. At the end, he disappears. (aidan)
     
     scene intro
     g "Alright Tributes, the Waterloo Games are about to begin!"
